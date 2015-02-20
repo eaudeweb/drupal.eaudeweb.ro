@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Provides install, updated, and uninstall functions for google_captcha.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function google_captcha_uninstall() {
+  db_delete('variable')
+    ->condition('name', 'google_captcha_%', 'LIKE')
+    ->execute();
+  cache_clear_all('variables', 'cache');
+}
+

@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Verifies if user is a human without necessity to solve a CAPTCHA.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function google_captcha_menu() {
+  $items = array();
+  $items['admin/config/people/captcha/google_captcha'] = array(
+    'title' => 'Google Captcha',
+    'description' => 'Administer the Google No CAPTCHA reCAPTCHA web service.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('google_captcha_admin_settings'),
+    'access arguments' => array('administer google_captcha'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'google_captcha.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function google_captcha_permission() {
+  return array(
+    'administer google_captcha' => array(
+      'title' => t('Administer Google Captcha'),
+      'description' => t('Administer Google captcha settings'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_captcha().
+ */
+function google_captcha_captcha($op, $captcha_type = '') {
+  switch ($op) {
+    case 'list':
+      return array('Google Captcha');
+    case 'generate':
+      $captcha = array();
+      if ($captcha_type == 'Google Captcha') {
+        $google_captcha_site_key = variable_get('google_captcha_site_key', FALSE);
+
+        // Test if captcha can be used, falling back to Math if it is not
+        // configured, the library won't load, or the server is down.
+        if ((!$google_captcha_site_key) || (!_google_captcha_load_library())) {
+          $args = func_get_args();
+          return captcha_captcha('generate', 'Math', $args);
+        }
+        // Create the form. Captcha requires TRUE to be returned in solution.
+        $captcha['solution'] = TRUE;
+        $captcha['captcha_validate'] = 'google_captcha_captcha_validation';
+        $captcha['form']['captcha_response'] = array(
+          '#type' => 'hidden',
+          '#value' => 'Google no captcha',
+        );
+        $captcha['form']['google_capture'] = array(
+          '#markup' => '<div class="g-recaptcha" data-sitekey="' . $google_captcha_site_key .'"></div>',
+        );
+
+        drupal_add_js('https://www.google.com/recaptcha/api.js', array('defer' => TRUE, 'async' => TRUE));
+      }
+      return $captcha;
+  }
+}
+
+/**
+ * CAPTCHA Callback; Validates the google captcha code.
+ */
+function google_captcha_captcha_validation($solution, $response, $element, $form_state) {
+
+  $google_captcha_private_key= variable_get('google_captcha_private_key', FALSE);
+  if (empty($_POST["g-recaptcha-response"]) || empty($google_captcha_private_key) || (!_google_captcha_load_library())) {
+    return FALSE;
+  }
+
+  $reCaptcha = new ReCaptcha($google_captcha_private_key);
+  $resp = $reCaptcha->verifyResponse(
+    $_SERVER["REMOTE_ADDR"],
+    $_POST["g-recaptcha-response"]
+  );
+  return $resp != null && $resp->success;
+}
+
+/**
+ * Load the recaptcha library.
+ */
+function _google_captcha_load_library() {
+  return module_load_include('php', 'google_captcha', 'ReCAPTCHA/php/recaptchalib');
+}
+

@@ -1,0 +1,41 @@
+name = Business Responsive Theme
+description = Drupal Responsive Theme Developed by <a href="http://www.zymphonies.com">Zymphonies</a> & Designed by <a href="http://www.freebiezz.com">FreeBiezz</a>. For free theme support, installation, bug reporting <a href="http://www.freebiezz.com/forum" rel="nofollow">support forum</a>. Contact us for Drupal Design & Development <a href="mailto:info@zymphonies.com">info@zymphonies.com</a> 
+core = 7.x
+
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[all][] = media.css
+scripts[] = js/custom.js
+
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[slideshow]      = Slideshow
+regions[front_welcome]  = Front Welcome
+regions[top_first]      = First top
+regions[top_second]     = Second top
+regions[top_third]      = Third top
+regions[content]        = Content
+regions[content_top]    = Content Top
+regions[footer]         = Footer
+regions[footer_first]   = First Bottom
+regions[footer_second]  = Second Bottom
+regions[footer_third]   = Third Bottom
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+settings[breadcrumbs]  = 1
+settings[social_links]  = 1
+settings[twitter_username] = "zymphonies"
+settings[facebook_username] = "zymphonies"
+; Information added by Drupal.org packaging script on 2015-02-12
+version = "7.x-1.4"
+core = "7.x"
+project = "business_responsive_theme"
+datestamp = "1423710782"
+
