@@ -1,0 +1,102 @@
+name = Standard
+description = Install with commonly used features pre-configured.
+version = 7.x-dev
+project = drupal
+core = 7.x
+
+; Core modules
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+; dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+; EdW modules
+; dependencies[] = edw_extras
+
+; Very common modules used in almost all projects
+dependencies[] = ctools
+; dependencies[] = date
+; dependencies[] = entity
+; dependencies[] = entityreference
+; dependencies[] = features
+; dependencies[] = ftools
+; dependencies[] = wysiwyg
+; dependencies[] = jquery_update
+; dependencies[] = libraries
+; dependencies[] = link
+; dependencies[] = pathauto
+; dependencies[] = strongarm
+; dependencies[] = taxonomy_access_fix
+; dependencies[] = token
+; dependencies[] = uuid
+; dependencies[] = variable
+dependencies[] = views
+; dependencies[] = wysiwyg
+
+; Multilingual
+; dependencies[] = i18n
+; dependencies[] = entity_translation
+; dependencies[] = title
+; dependencies[] = lang_dropdown
+; dependencies[] = languagefield
+
+; Search modules
+; dependencies[] = facetapi
+; dependencies[] = search_api
+; dependencies[] = search_api_attachments
+; dependencies[] = search_api_et
+; dependencies[] = search_api_et_solr
+; dependencies[] = search_api_solr
+; dependencies[] = search_autocomplete
+
+; Common modules
+; dependencies[] = chosen
+; dependencies[] = entity_collection
+; dependencies[] = htmlmail
+; dependencies[] = mailsystem
+; dependencies[] = image_field_caption
+; dependencies[] = menu_block
+; dependencies[] = migrate
+; dependencies[] = r4032login
+; dependencies[] = rules
+; dependencies[] = views_slideshow
+
+; Development modules
+dependencies[] = devel
+; dependencies[] = reroute_email
+
+; Rare modules
+; dependencies[] = context
+; dependencies[] = diff
+; dependencies[] = field_group
+; dependencies[] = flickr
+; dependencies[] = on_the_web
+; dependencies[] = linkchecker
+; dependencies[] = pathologic
+; dependencies[] = views_bulk_operations
+
+; Exotic modules
+; dependencies[] = feeds
+; dependencies[] = file_entity
+; dependencies[] = media
+; dependencies[] = tmgmt
+; dependencies[] = workbench
+; dependencies[] = workbench_access
+; dependencies[] = workbench_moderation

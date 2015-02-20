@@ -1,0 +1,83 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the standard installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function standard_install() {
+  require_once 'standard.lib.blocks.inc';
+  require_once 'standard.lib.editor.inc';
+  require_once 'standard.lib.search.inc';
+  require_once 'standard.lib.security.inc';
+
+  // Set global variables
+  if ($variables = standard_get_variable()) {
+    foreach ($variables as $k => $v) {
+      variable_set($k, $v);
+    }
+  }
+
+  standard_create_blocks();
+  standard_create_formats();
+
+  // Enable default permissions for system roles.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval'));
+
+  // Create a default role for site administrators, with all available permissions assigned.
+  $admin_role = new stdClass();
+  $admin_role->name = 'administrator';
+  $admin_role->weight = 2;
+  user_role_save($admin_role);
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+  // Set this as the administrator role.
+  variable_set('user_admin_role', $admin_role->rid);
+
+  // Assign user 1 the "administrator" role.
+  db_insert('users_roles')
+    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+    ->execute();
+
+  // Configure the search
+  standard_setup_search();
+  // Configure users
+  standard_setup_users();
+  menu_rebuild();
+}
+
+/**
+ * @return mixed
+ */
+function standard_get_variable($name = NULL, $default = FALSE) {
+  global $project_config;
+  $ret = $default;
+  // Set global variables
+  if (!empty($project_config['aliases']['local']['variables'])
+      && is_array($project_config['aliases']['local']['variables'])) {
+    $ret = $project_config['aliases']['local']['variables'];
+    if ($name && isset($ret[$name])) {
+      $ret = $ret[$name];
+    }
+  }
+  return $ret;
+}
+
+/**
+ * @return mixed
+ */
+function standard_get_config($profile = 'local') {
+  global $project_config;
+  $ret = array();
+  if (!empty($project_config['aliases'][$profile])
+      && is_array($project_config['aliases'][$profile])) {
+    $ret = $project_config['aliases'][$profile];
+  }
+  return $ret;
+}

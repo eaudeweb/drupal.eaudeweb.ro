@@ -1,0 +1,117 @@
+# Configure drush site aliases, "local" is mandatory and used to project-make & project-install (contains all settings)
+aliases:
+    local:
+        # Put here the path to project.make or leave empty to use default Drupal's distribution
+        makefile: etc/project.make
+        uri: http://drupal.local.website:8080
+        root: /absolute/path/to/drupal/docroot
+        remote-host: localhost
+        remote-user: account
+
+        # Database connection options
+        db:
+            host: localhost
+            username : root
+            password : root
+            port: 3306
+            database : skeledrup
+            root_username: root
+            root_password: root
+
+        # Create these users during installation
+        users:
+            # override: true # if TRUE in local.yml will override values defined here
+            admin: # admin is mandatory, DO NOT DELETE!
+                name: admin # Customise "admin" username - defaults to admin
+                pass: password
+                mail: cristian.romanescu@eaudeweb.ro
+#            test:
+#                name: john
+#                pass: secret
+#                mail: john.doe@mailinator.com
+#                status: 1
+#                timezone: Europe/Bucharest
+
+        variables:
+            # override              : true # if TRUE in local.yml will override values defined here
+            # Mandatory variables
+            site_mail               : site.mail@mailinator.com
+            site_name               : My newest Drupal project
+            site_frontpage          : node
+            file_public_path        : sites/default/files
+            file_default_scheme     : public
+            user_register           : 0 # 0-USER_REGISTER_ADMINISTRATORS_ONLY/1-USER_REGISTER_VISITORS/2-USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL
+            site_default_country    : CH
+            date_default_timezone   : UTC
+            admin_theme             : seven
+            # Optional variables
+            site_slogan             : Default site slogan
+            default_nodes_main      : 10
+            site_403                :
+            site_404                :
+            # File related settings
+            file_private_path       :
+            file_temporary_path     :
+            user_cancel_method      :
+            user_pictures           : 0
+            theme_default           : your_theme
+            date_first_day          : 1
+            configurable_timezones  : 0
+            user_default_timezone   : 0
+            recaptcha_public        : public_key
+            recaptcha_private       : private_key
+            jquery_update_compression_type      : min
+            jquery_update_jquery_admin_version  :
+            jquery_update_jquery_cdn            : none
+            jquery_update_jquery_version        : 1.9
+
+        solr-servers:
+            # override             : true # if TRUE in local.yml will override values defined here
+            solr_server:
+                name              : Apache Solr server
+                enabled           : 1
+                description       :
+                scheme            : http
+                host              : 127.0.0.1
+                port              : 8080
+                path              : /solr/core
+                http_user         :
+                http_password     :
+                excerpt           :
+                retrieve_data     :
+                highlight_data    :
+                skip_schema_check :
+                solr_version      :
+                http_method       : AUTO
+                apachesolr_read_only      : null
+                apachesolr_direct_commit  : 0
+                apachesolr_soft_commit    : 1
+
+        devify:
+            disable-modules: [update]
+            enable-modules:  [devel]
+            delete-variables: []
+            reset-variables: []
+
+    dev:
+        uri: http://drupal.dev.website:8080
+        root: /path/to/drupal/docroot
+        remote-host: drupal.dev.website
+        remote-user: account
+
+    staging:
+        uri: http://drupal.staging.website:8080
+        root: /path/to/drupal/docroot
+        remote-host: drupal.staging.website
+        remote-user: account
+
+    prod:
+        uri: http://drupal.prod.website:8080
+        root: /path/to/drupal/docroot
+        remote-host: drupal.prod.website
+        remote-user: account
+        command-specific:
+            sql-sync:
+                simulate: 1
+            rsync:
+                simulate: 1
