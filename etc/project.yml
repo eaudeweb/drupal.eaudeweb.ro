@@ -106,12 +106,7 @@ aliases:
         remote-user: account
 
     prod:
-        uri: http://drupal.prod.website:8080
-        root: /path/to/drupal/docroot
-        remote-host: drupal.prod.website
-        remote-user: account
-        command-specific:
-            sql-sync:
-                simulate: 1
-            rsync:
-                simulate: 1
+        uri: http://drupal.eaudeweb.ro
+        root: /var/www/html/drupal.eaudeweb.ro/docroot
+        remote-host: php-prod1
+        remote-user: php
