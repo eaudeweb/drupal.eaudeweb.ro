@@ -28,7 +28,9 @@ interface DrupalEntityControllerInterface {
    * @param $ids
    *   An array of entity IDs, or FALSE to load all entities.
    * @param $conditions
-   *   An array of conditions in the form 'field' => $value.
+   *   An array of conditions. Keys are field names on the entity's base table.
+   *   Values will be compared for equality. All the comparisons will be ANDed
+   *   together. This parameter is deprecated; use an EntityFieldQuery instead.
    *
    * @return
    *   An array of entity objects indexed by their ids. When no results are
@@ -236,7 +238,9 @@ class DrupalDefaultEntityController implements DrupalEntityControllerInterface {
    * @param $ids
    *   An array of entity IDs, or FALSE to load all entities.
    * @param $conditions
-   *   An array of conditions in the form 'field' => $value.
+   *   An array of conditions. Keys are field names on the entity's base table.
+   *   Values will be compared for equality. All the comparisons will be ANDed
+   *   together. This parameter is deprecated; use an EntityFieldQuery instead.
    * @param $revision_id
    *   The ID of the revision to load, or FALSE if this query is asking for the
    *   most current revision(s).
@@ -359,8 +363,7 @@ class DrupalDefaultEntityController implements DrupalEntityControllerInterface {
     // Exclude any entities loaded from cache if they don't match $conditions.
     // This ensures the same behavior whether loading from memory or database.
     if ($conditions) {
-      foreach ($entities as $key => $entity) {
-        $entity_values = (array) $entity;
+      foreach ($entities as $entity) {
         // Iterate over all conditions and compare them to the entity
         // properties. We cannot use array_diff_assoc() here since the
         // conditions can be nested arrays, too.
