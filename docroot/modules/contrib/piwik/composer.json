@@ -1,0 +1,8 @@
+{
+  "name": "drupal/piwik",
+  "description": "Adds Piwik javascript tracking code to all your site's pages",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}

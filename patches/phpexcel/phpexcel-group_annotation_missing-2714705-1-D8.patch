@@ -1,0 +1,21 @@
+diff --git a/src/Tests/ExporterTest.php b/src/Tests/ExporterTest.php
+index 0e1e144..f053613 100644
+--- a/src/Tests/ExporterTest.php
++++ b/src/Tests/ExporterTest.php
+@@ -10,6 +10,9 @@ namespace Drupal\phpexcel\Tests;
+ use Drupal\phpexcel\Exporter;
+ use Drupal\Tests\UnitTestCase;
+ 
++/**
++ * @group phpexcel
++ */
+ class ExporterTest extends UnitTestCase {
+ 
+   protected $single_worksheet_file;
+@@ -531,4 +534,4 @@ class ExporterTest extends UnitTestCase {
+ 
+     node_save($node);
+   }
+-}
+\ No newline at end of file
++}

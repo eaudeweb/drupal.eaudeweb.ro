@@ -1,0 +1,9 @@
+uuid: 3bd3ff8b-8b23-4ed9-ab14-202526a23902
+langcode: en
+status: true
+dependencies: {  }
+name: Organisation
+vid: organisation
+description: 'Institution or body related to the portal'
+hierarchy: 0
+weight: 0

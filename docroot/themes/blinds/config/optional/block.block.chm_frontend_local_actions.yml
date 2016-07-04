@@ -1,0 +1,20 @@
+uuid: eefe31de-57b9-4208-aa08-8b14d5477319
+langcode: en
+status: true
+dependencies:
+  theme:
+    - blinds
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: blinds_local_actions
+theme: blinds
+region: header
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+diff --git a/src/Theme.php b/src/Theme.php
+index 1c83dd0..065a3f2 100644
+--- a/src/Theme.php
++++ b/src/Theme.php
+@@ -100,7 +100,12 @@ class Theme {
+ 
+     // Only install the theme if there is no schema version currently set.
+     if (!$this->getSetting('schema')) {
+-      $this->install();
++      try {
++        $this->install();
++      } catch(\Exception $e) {
++        // See: https://www.drupal.org/node/2697075
++        watchdog_exception('bootstrap.theme', $e);
++      }
+     }
+   }
+ 

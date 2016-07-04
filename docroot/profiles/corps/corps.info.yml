@@ -1,0 +1,44 @@
+name: corps
+type: profile
+description: 'Corps portal installation'
+version: 8.x
+hidden: TRUE
+core: 8.x
+distribution:
+  name: corps
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - dblog
+  - system
+  - shortcut
+  - taxonomy
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - user
+  - automated_cron
+  - libraries
+  - phpexcel
+themes:
+  - seven
+  - blinds

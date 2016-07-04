@@ -1,0 +1,16 @@
+name: Calendar
+type: module
+description: 'Views plugin to display views containing dates as Calendars.'
+dependencies:
+  - calendar_datetime
+  - views
+  - views_templates
+package: Date/Time
+# core: 8.x
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2016-05-05
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'calendar'
+datestamp: 1462455154

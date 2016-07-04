@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Installation file for Piwik - Web analytics module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Remove cache directory if module is uninstalled.
+ */
+function piwik_uninstall() {
+  piwik_clear_js_cache();
+}
+
+/**
+ * Implements hook_requirements().
+ */
+function piwik_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'runtime') {
+    $config = \Drupal::config('piwik.settings');
+
+    // Raise warning if Piwik user account has not been set yet.
+    if (!preg_match('/^\d{1,}$/', $config->get('site_id'))) {
+      $requirements['piwik_site_id'] = [
+        'title' => t('Piwik module'),
+        'description' => t('Piwik module has not been configured yet. Please configure its settings from the <a href=":url">Piwik settings page</a>.', [':url' => \Drupal::url('piwik.admin_settings_form')]),
+        'severity' => REQUIREMENT_WARNING,
+        'value' => t('Not configured'),
+      ];
+    }
+  }
+
+  return $requirements;
+}

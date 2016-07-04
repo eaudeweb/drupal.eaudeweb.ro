@@ -1,0 +1,24 @@
+uuid: 8c3f0876-b09f-4eb0-882f-472039b3dfd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_field_date_on_calendar
+  module:
+    - views
+  theme:
+    - blinds
+id: views_block__content_field_date_on_calendar_block_1
+theme: blinds
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:content_field_date_on_calendar-block_1'
+settings:
+  id: 'views_block:content_field_date_on_calendar-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
