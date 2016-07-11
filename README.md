@@ -30,4 +30,5 @@ $ drush config-import <env> --partial # environment-specific overrides
 ```
 
 **config-name:** The config object name, for example "system.site".
+
 **env:** The environment name, for example "local", "dev", "prod".
