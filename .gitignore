@@ -4,3 +4,4 @@ docroot/sites/*/files
 docroot/sites/*/private
 acquia-files
 .idea/
+docroot/sites/default/settings.local.php
