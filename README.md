@@ -10,25 +10,8 @@
 ## Quick start
 
 1. Copy and rename `docroot/sites/example.settings.local.php` to `docroot/sites/default/settings.local.php`.
-2. Append your database configuration settings:
-
-  ```php
-  /**
-   * Database settings.
-   */
-  $databases['default']['default'] = array(
-    'database' => 'iucn_wildlife',
-    'username' => 'username',
-    'password' => 'password',
-    'prefix' => '',
-    'host' => 'localhost',
-    'port' => '3306',
-    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-    'driver' => 'mysql',
-  );
-  ```
-
-3. Run `drush sql-sync @drupaledw.<env> @self`
+2. Configure the ``$databases`, `$trusted_host_patterns` and `$hash_salt` within settings.local.php file.
+3. Run `drush sql-sync @drupaledw.<env> @self`.
 
 ### Configuration management
 
