@@ -1,4 +1,4 @@
-# IUCN Wildlife
+# Drupal @ EDW
 
 # Installation
 
