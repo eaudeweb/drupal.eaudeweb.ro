@@ -19,7 +19,6 @@ docroot/web.config
 # Ignore configuration files that may contain sensitive information.
 docroot/sites/*/settings.local.php
 .idea
-*.local.php
 drush/aliases/aliases.drushrc.php
 drush/aliases/aliases.local.php
 conf/config.json

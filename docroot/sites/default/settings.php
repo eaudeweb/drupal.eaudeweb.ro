@@ -244,7 +244,13 @@
  *   );
  * @endcode
  */
-$config_directories = array();
+$config_directories = array(
+  'vcs' => $app_root . '/../config/default',
+  'local' => $app_root . '/../config/local',
+  'dev' => $app_root . '/../config/dev',
+  'prod' => $app_root . '/../config/prod',
+);
+$config_directories[CONFIG_SYNC_DIRECTORY] = $config_directories['vcs'];
 
 /**
  * Settings:
