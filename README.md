@@ -28,8 +28,7 @@
   );
   ```
 
-3. Download drush aliases from Acquia (https://docs.acquia.com/cloud/drush-aliases).
-4. Run `drush sql-sync @drupaledw.<env> @self`
+3. Run `drush sql-sync @drupaledw.<env> @self`
 
 ### Configuration management
 
