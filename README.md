@@ -12,6 +12,7 @@
 1. Copy and rename `docroot/sites/example.settings.local.php` to `docroot/sites/default/settings.local.php`.
 2. Configure the `$databases`, `$trusted_host_patterns` and `$hash_salt` within settings.local.php file.
 3. Run `drush sql-sync @drupaledw.<env> @self`.
+4. Run `drush cim vcs`
 
 ## Configuration management
 
