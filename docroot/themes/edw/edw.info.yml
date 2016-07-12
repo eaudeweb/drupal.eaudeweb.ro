@@ -22,4 +22,4 @@ regions:
 libraries:
   - 'edw/global-styling'
   - 'edw/bootstrap-scripts'
-  - 'blinds/fonts'
+  - 'edw/fonts'

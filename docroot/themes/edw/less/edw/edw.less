@@ -13,10 +13,10 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.footer{
-  background:none repeat scroll 0 0 @green;
+.footer {
+  background: none repeat scroll 0 0 @green;
   border: 0px transparent;
-  color:white;
+  color: white;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 17px;
   padding: 10px 0px;
@@ -38,14 +38,18 @@ a:hover, a:focus {
   margin-top: 17px;
   padding-bottom: 0px;
 }
+
 .navbar-collapse {
   padding-right: 0px;
   padding-left: 0px;
 }
-.navbar-nav{
+
+.navbar-nav {
   .pull-right;
 }
+.navbar-nav li{
 
+}
 .navbar-nav > li > a {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   padding: 10px 35px;
@@ -54,6 +58,8 @@ a:hover, a:focus {
   color: white !important;
   height: 68px;
   padding: 28px 35px 2px;
+  background-color: transparent !important;
+
 }
 
 .navbar li a.is-active, .navbar a:hover, .navbar a:focus {
@@ -81,7 +87,6 @@ h1.navbar-brand-and-text-wrapper {
   margin-top: 2px;
   color: rgb(148, 146, 146);
 }
-
 
 .navbar-nav a {
   display: inline-block;
@@ -143,41 +148,78 @@ h1.navbar-brand-and-text-wrapper {
 }
 
 @media (max-width: 768px) {
-  #block-blinds-main-menu{
+  #block-blinds-main-menu {
     overflow: hidden;
   }
+
   .navbar-nav {
     text-align: center;
-    float:none !important;
+    float: none !important;
   }
+
   a.logo {
     text-align: center;
-    float:none !important;
+    float: none !important;
 
   }
-  a.logo img{
+
+  a.logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top:20px;
+    margin-top: 20px;
 
   }
 }
 
-
-.edw-top-bar{
+.edw-top-bar {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 
   border-top: 2px solid @green-light;
   h1 {
-    margin:0px;
-    font-size:22px;
-    color:white;
+    margin: 0px;
+    font-size: 22px;
+    color: white;
     padding: 5px 0px;
   }
   .page-header {
     border-bottom: 0px solid #eee;
   }
-  background:none repeat scroll 0 0 @green;
+  background: none repeat scroll 0 0 @green;
 
+}
+
+.links {
+  margin-top: 10px;
+  margin-left: 0px;
+  li{
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+  li a {
+    background-color: @green-light;
+    color: #fff;
+    padding: .4em 10px .4em;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+
+    &:hover {
+      background-color: @green;
+      -webkit-transition: background-color 100ms linear;
+      -moz-transition: background-color 100ms linear;
+      -o-transition: background-color 100ms linear;
+      -ms-transition: background-color 100ms linear;
+      transition: background-color 100ms linear;
+
+    }
+
+  }
+}
+
+
+.author{
 }
