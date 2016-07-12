@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
     - search
   theme:
     - edw
@@ -19,4 +20,11 @@ settings:
   label: Search
   provider: search
   label_display: visible
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

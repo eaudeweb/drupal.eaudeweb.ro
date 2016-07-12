@@ -223,3 +223,27 @@ h1.navbar-brand-and-text-wrapper {
 
 .author{
 }
+.no-left-padding{
+  padding-left: 0px !important;
+}
+.no-right-padding{
+  padding-right: 0px !important;
+}
+.no-padding{
+  .no-left-padding;
+  .no-right-padding;
+}
+.layout-two-thirds{
+  .no-left-padding;
+.make-sm-column(8);
+}
+.layout-one-third{
+  .no-right-padding;
+  .make-sm-column(4);
+}
+
+.fullwidth-iframe-container{
+  iframe {
+    width: 100%;
+  }
+}

@@ -13,10 +13,50 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - ds
     - image
     - simple_gmap
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col_stacked
+      disable_css: true
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          header: {  }
+          left:
+            layout-two-thirds: layout-two-thirds
+          right:
+            layout-one-third: layout-one-third
+            well: well
+          footer: {  }
+    regions:
+      left:
+        - field_image
+        - body
+      right:
+        - field_start_date
+        - field_end_date
+        - field_location
+        - field_google_location_string
+      footer:
+        - field_tags
+        - links
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -25,66 +65,94 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_end_date:
-    weight: 4
-    label: above
+    weight: 3
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
   field_google_location_string:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       include_map: '1'
-      include_static_map: '0'
-      include_link: '0'
-      include_text: '0'
+      iframe_width: ''
       iframe_height: '200'
-      iframe_width: '200'
+      link_text: 'View larger map'
       zoom_level: '14'
       information_bubble: '1'
-      link_text: 'View larger map'
       map_type: m
       langcode: en
-    third_party_settings: {  }
+      include_static_map: 0
+      include_link: 0
+      include_text: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: ''
+            fi-cl: fullwidth-iframe-container
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
     type: simple_gmap
   field_image:
-    weight: 1
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
   field_location:
-    weight: 5
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_start_date:
-    weight: 3
-    label: above
+    weight: 2
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
   field_tags:
-    weight: 7
+    weight: 6
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 0
+    weight: 7
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

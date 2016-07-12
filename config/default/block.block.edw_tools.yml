@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.tools
   module:
+    - ctools
     - system
   theme:
     - edw
@@ -23,4 +24,11 @@ settings:
   label_display: visible
   level: 1
   depth: 0
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
