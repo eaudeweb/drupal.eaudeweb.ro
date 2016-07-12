@@ -1,0 +1,6 @@
+[submodule "docroot/libraries/slick"]
+	path = docroot/libraries/slick
+	url = git@github.com:kenwheeler/slick.git
+[submodule "docroot/libraries/easing"]
+	path = docroot/libraries/easing
+	url = git@github.com:gdsmith/jquery.easing.git
