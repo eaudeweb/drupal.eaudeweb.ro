@@ -1,0 +1,19 @@
+uuid: ae19394f-b3a7-49cb-bcd0-88682de001bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_location_string
+    - node.type.event
+id: node.event.field_google_location_string
+field_name: field_google_location_string
+entity_type: node
+bundle: event
+label: 'Google location string'
+description: 'Human-readable google maps search string (e.g. Bucharest)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
