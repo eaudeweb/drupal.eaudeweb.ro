@@ -1,0 +1,22 @@
+uuid: 65e385f6-e67d-488a-878d-932711b52632
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - edw
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: edw_content
+theme: edw
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

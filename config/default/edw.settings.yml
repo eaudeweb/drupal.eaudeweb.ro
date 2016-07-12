@@ -1,0 +1,16 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://drupaledw.localhost/themes/edw/favicon.ico'
+  use_default: 1
+schema: '8000'
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/edw/images/logo.png
+  url: ''
+  use_default: 0
+fluid_container: 1
