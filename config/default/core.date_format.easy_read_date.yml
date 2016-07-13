@@ -1,0 +1,8 @@
+uuid: d62a2bae-3ce1-4b0c-b61d-36a204045b51
+langcode: en
+status: true
+dependencies: {  }
+id: easy_read_date
+label: 'Easy read date'
+locked: false
+pattern: 'j F Y'

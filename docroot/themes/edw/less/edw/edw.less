@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Open Sans', Tahoma, Georgia, Arial, sans-serif;
-  font-size: 12px;
-  text-align: justify;
+  font-size: 13px;
+  //text-align: justify;
   margin-top: 0px;
 }
 
@@ -20,6 +20,11 @@ a:hover, a:focus {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 17px;
   padding: 10px 0px;
+  /* unvisited link */
+  a, a:link, a:visited, a:hover, a:active {
+    color: whitesmoke;
+  }
+
 }
 
 .edw-header {
@@ -28,147 +33,153 @@ a:hover, a:focus {
 
 }
 
-.navbar {
-  border-radius: 0px;
-  border: 0px solid transparent;
-  background: none repeat scroll 0 0 @black;
-  padding-right: 0px;
-  padding-left: 0px;
-  min-height: 20px;
-  margin-top: 17px;
-  padding-bottom: 0px;
-}
+.edw-header {
+  .navbar {
+    border-radius: 0px;
+    border: 0px solid transparent;
+    background: none repeat scroll 0 0 @black;
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 20px;
+    margin-top: 17px;
+    padding-bottom: 0px;
+  }
 
-.navbar-collapse {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+  .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
-.navbar-nav {
-  .pull-right;
-}
-.navbar-nav li{
-
-}
-.navbar-nav > li > a {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  padding: 10px 35px;
-  font-size: 20px;
-  margin-left: 10px;
-  color: white !important;
-  height: 68px;
-  padding: 28px 35px 2px;
-  background-color: transparent !important;
-
-}
-
-.navbar li a.is-active, .navbar a:hover, .navbar a:focus {
-  color: #fffff0 !important;
-  text-decoration: none;
-}
-
-.navbar-text {
-}
-
-h1.navbar-brand-and-text-wrapper {
-  float: left;
-  font-size: 13px;
-  margin-top: 24px;
-}
-
-.navbar-brand {
-  float: none;
-  color: white;
-  font-size: 25px;
-}
-
-.navbar-text {
-  float: none;
-  margin-top: 2px;
-  color: rgb(148, 146, 146);
-}
-
-.navbar-nav a {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 3px;
-}
-
-.navbar-nav a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  transition: width 0s ease, background .5s ease;
-}
-
-.navbar-nav a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: whitesmoke;
-  transition: width .5s ease;
-}
-
-.navbar-nav a:hover:before, .navbar a.is-active:before {
-  width: 100%;
-  background: whitesmoke;
-  transition: width .5s ease;
-}
-
-.navbar-nav a:hover:after, .navbar a.is-active:after {
-  width: 100%;
-  background: transparent;
-  transition: all 0s ease;
-}
-
-@media (max-width: 992px) {
   .navbar-nav {
-    float: left;
+    .pull-right;
+  }
+  .navbar-nav li {
 
+  }
+  .navbar-nav > li > a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 10px 35px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white !important;
+    height: 68px;
+    padding: 28px 35px 2px;
+    background-color: transparent !important;
+
+  }
+
+  .navbar li a.is-active, .navbar a:hover, .navbar a:focus {
+    color: #fffff0 !important;
+    text-decoration: none;
+  }
+
+  .navbar-text {
+  }
+
+  h1.navbar-brand-and-text-wrapper {
+    float: left;
+    font-size: 13px;
+    margin-top: 24px;
+  }
+
+  .navbar-brand {
+    float: none;
+    color: white;
+    font-size: 25px;
+  }
+
+  .navbar-text {
+    float: none;
+    margin-top: 2px;
+    color: rgb(148, 146, 146);
   }
 
   .navbar-nav a {
-    margin-left: 0px !important;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
   }
 
-  .logo {
-
-    float: left;
-    margin-right: 10px;
-
-  }
-}
-
-@media (max-width: 768px) {
-  #block-blinds-main-menu {
-    overflow: hidden;
-  }
-
-  .navbar-nav {
-    text-align: center;
-    float: none !important;
-  }
-
-  a.logo {
-    text-align: center;
-    float: none !important;
-
-  }
-
-  a.logo img {
+  .navbar-nav a:before {
+    content: '';
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+  }
 
+  .navbar-nav a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: whitesmoke;
+    transition: width .5s ease;
+  }
+
+  .navbar-nav a:hover:before, .navbar a.is-active:before {
+    width: 100%;
+    background: whitesmoke;
+    transition: width .5s ease;
+  }
+
+  .navbar-nav a:hover:after, .navbar a.is-active:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+
+  @media (max-width: 992px )and (min-width: 768px) {
+    .navbar-nav {
+      float: left;
+
+    }
+
+    .navbar-nav a {
+      margin-left: 0px !important;
+    }
+
+    .logo {
+
+      float: left;
+      margin-right: 10px;
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    #block-edw-main-menu {
+      overflow: hidden;
+    }
+
+    .navbar-nav {
+      text-align: center;
+      float: none !important;
+    }
+
+    a.logo {
+      text-align: center;
+      float: none !important;
+
+    }
+
+    a.logo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+
+    }
+
+    #navbar .region-navigation {
+      display: inline-block;
+    }
   }
 }
 
@@ -186,13 +197,13 @@ h1.navbar-brand-and-text-wrapper {
     border-bottom: 0px solid #eee;
   }
   background: none repeat scroll 0 0 @green;
-
+  margin-bottom: 20px;
 }
 
 .links {
   margin-top: 10px;
   margin-left: 0px;
-  li{
+  li {
     padding-left: 0px;
     padding-right: 5px;
   }
@@ -220,29 +231,42 @@ h1.navbar-brand-and-text-wrapper {
   }
 }
 
-
-.author{
+.author {
 }
-.no-left-padding{
+
+.no-left-padding {
   padding-left: 0px !important;
 }
-.no-right-padding{
+
+.no-right-padding {
   padding-right: 0px !important;
 }
-.no-padding{
+
+.no-padding {
   .no-left-padding;
   .no-right-padding;
-}
-.layout-two-thirds{
-  .no-left-padding;
-.make-sm-column(8);
-}
-.layout-one-third{
-  .no-right-padding;
-  .make-sm-column(4);
 }
 
-.fullwidth-iframe-container{
+.layout-two-thirds {
+  .no-padding;
+  .make-sm-column(8);
+  padding-bottom: 15px;
+}
+
+.layout-one-third {
+  .no-padding;
+  .make-sm-column(4);
+  padding-bottom: 15px;
+
+}
+.layout-footer{
+  clear: both;
+}
+.layout-footer-links-teaser{
+  .layout-footer;
+  margin-left: -20px;
+}
+.fullwidth-iframe-container {
   iframe {
     width: 100%;
   }

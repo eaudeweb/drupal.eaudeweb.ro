@@ -6,9 +6,12 @@ classes:
   region:
     - layout-two-thirds
     - layout-one-third
+    - layout-footer
+    - layout-footer-links-teaser
     - col-md-8
     - col-md-4
     - well
+    - row
   field: {  }
 use_field_names: true
 _core:
