@@ -4,7 +4,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://drupaledw.localhost/themes/edw/favicon.ico'
+  url: 'http://edwdev.localhost/themes/edw/favicon.ico'
   use_default: true
 schema: '8000'
 logo:

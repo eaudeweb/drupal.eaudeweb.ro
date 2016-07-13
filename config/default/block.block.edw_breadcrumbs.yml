@@ -10,8 +10,8 @@ _core:
   default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
 id: edw_breadcrumbs
 theme: edw
-region: highlighted
-weight: -6
+region: header
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
