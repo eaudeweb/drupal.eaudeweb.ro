@@ -1,6 +1,6 @@
 uuid: 027ec772-9434-4635-896b-5e2e13c1d50d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
 id: edw_powered
 theme: edw
-region: footer
-weight: -7
+region: '-1'
+weight: -4
 provider: null
 plugin: system_powered_by_block
 settings:
