@@ -72,9 +72,16 @@ content:
     weight: 3
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
+      format_type: easy_read_date
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: datetime_default
   field_google_location_string:
     weight: 5
@@ -140,9 +147,16 @@ content:
     weight: 2
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
+      format_type: easy_read_date
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: datetime_default
   field_tags:
     weight: 6
