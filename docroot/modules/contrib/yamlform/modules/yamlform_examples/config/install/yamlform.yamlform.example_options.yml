@@ -1,0 +1,211 @@
+langcode: en
+status: false
+dependencies: {  }
+id: example_options
+title: 'Example: Options'
+description: 'Examples of all available select menu, radioa, and checkboxes options.'
+elements: |
+  basic_options:
+    '#title': 'Basic Options'
+    '#type': details
+    '#open': true
+    yes_no:
+      '#type': radios
+      '#title': 'Yes or No'
+      '#options': yes_no
+    gender:
+      '#type': radios
+      '#title': 'Gender'
+      '#options': gender
+
+  date_options:
+    '#title': 'Date Options'
+    '#type': details
+    '#open': true
+    days:
+      '#type': select
+      '#title': 'Days of the week'
+      '#options': days
+
+  location_options:
+    '#title': 'Location Options'
+    '#type': details
+    '#open': true
+    state_names:
+      '#type': select
+      '#title': 'State (names)'
+      '#options': state_names
+    state_codes:
+      '#type': select
+      '#title': 'State (codes)'
+      '#options': state_codes
+    state_province_names:
+      '#type': select
+      '#title': 'State/Province (name)'
+      '#options': state_province_names
+    state_province_codes:
+      '#type': select
+      '#title': 'State/Province (codes)'
+      '#options': state_province_codes
+    country_names:
+      '#type': select
+      '#title': 'Country (names)'
+      '#options': country_names
+    country_codes:
+      '#type': select
+      '#title': 'Country (codes)'
+      '#options': country_codes
+    country_names_autocomplete:
+      '#type': textfield
+      '#title': 'Country using autocomplete (names)'
+      '#autocomplete': 'country_names'
+
+  likert_options:
+    '#title': 'Likert Options'
+    '#type': details
+    '#open': true
+    likert_agreement:
+      '#type': likert
+      '#title': 'Likert: Agreement'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_agreement
+    likert_comparison:
+      '#type': likert
+      '#title': 'Likert: Comparison'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_comparison
+    likert_importance:
+      '#type': likert
+      '#title': 'Likert: Importance'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_importance
+    likert_satisfaction:
+      '#type': likert
+      '#title': 'Likert: Satisfaction'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_satisfaction
+    likert_ten_scale:
+      '#type': likert
+      '#title': 'Likert: Ten Scale'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_ten_scale
+    likert_would_you:
+      '#type': likert
+      '#title': 'Likert: Would You'
+      '#answers': likert_would_you
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+  range_options:
+    '#title': 'Range Options'
+    '#type': details
+    '#open': true
+    number_range:
+      '#type': 'select'
+      '#title': 'Range (1-10)'
+      '#options': range
+      '#min': 1
+      '#max': 10
+      '#step': 1
+    number_padded_range:
+      '#type': 'select'
+      '#title': 'Range (001-010)'
+      '#options': range
+      '#min': 1
+      '#max': 10
+      '#step': 1
+      '#pad_length': 3
+      '#pad_string': '0'
+    letter_uppercase_range:
+      '#type': 'select'
+      '#title': 'Range (A-Z)'
+      '#options': range
+      '#min': A
+      '#max': Z
+    letter_lowercase_range:
+      '#type': 'select'
+      '#title': 'Range (a-z)'
+      '#options': range
+      '#min': a
+      '#max': z
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_closed_message: ''
+  form_exception_message: ''
+  form_submit_label: ''
+  form_prepopulate: false
+  form_confidential: false
+  form_confidential_message: ''
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_prev_button_label: ''
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_prev_button_label: ''
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

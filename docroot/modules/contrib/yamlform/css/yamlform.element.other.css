@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Styles for YAML form (select|checkboxes|radios)_other element.
+ */
+
+html.js .form-type-yamlform-select-other .form-type-textfield,
+html.js .form-type-yamlform-checkboxes-other .form-type-textfield,
+html.js .form-type-yamlform-radios-other .form-type-textfield {
+  display: none;
+}

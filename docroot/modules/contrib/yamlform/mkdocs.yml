@@ -1,0 +1,13 @@
+site_name: YAML Form Documentation
+theme: readthedocs
+pages:
+- Introduction: index.md
+- Videos: videos.md
+- Screenshots: screenshots.md
+- Todo: todo.md
+- Roadmap: roadmap.md
+- Known Issues: issues.md
+- For Developers and Maintainers:
+  - Maintainers: maintainers.md
+  - Development: development.md
+  - Test Script: test.md

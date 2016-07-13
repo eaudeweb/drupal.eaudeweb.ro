@@ -1,0 +1,9 @@
+uuid: 88bb5775-4e16-4b53-bcc7-df1a200b8a52
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 25qe1Z3iyWsoqllQGDvIY529Ox93XlsAMrPSwEK9i7g
+id: titles
+label: Titles
+options: "Miss: Miss\nMs: Ms\nMr: Mr\nMrs: Mrs\nDr: Dr\n"

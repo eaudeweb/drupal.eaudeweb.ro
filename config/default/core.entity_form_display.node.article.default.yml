@@ -49,10 +49,7 @@ content:
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

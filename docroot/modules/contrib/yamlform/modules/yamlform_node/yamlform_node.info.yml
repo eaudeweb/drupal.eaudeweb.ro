@@ -1,0 +1,14 @@
+name: 'YAML Form Node'
+type: module
+description: 'Provides a YAML form content type.'
+package: 'YAML Form'
+# core: 8.x
+dependencies:
+  - node
+  - yamlform
+
+# Information added by Drupal.org packaging script on 2016-07-12
+version: '8.x-1.0-beta7'
+core: '8.x'
+project: 'yamlform'
+datestamp: 1468286942

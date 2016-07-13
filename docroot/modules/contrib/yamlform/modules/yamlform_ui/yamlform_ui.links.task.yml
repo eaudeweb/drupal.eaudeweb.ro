@@ -1,0 +1,4 @@
+entity.yamlform.source_form_elements:
+  title: 'Source (YAML)'
+  route_name: entity.yamlform.source_form
+  parent_id: entity.yamlform.edit_form

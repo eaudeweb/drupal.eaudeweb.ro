@@ -24,7 +24,6 @@ third_party_settings:
       disable_css: true
       entity_classes: all_classes
       settings:
-        classes: {  }
         wrappers:
           header: div
           left: div
@@ -34,6 +33,12 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
+          header: {  }
+          left: {  }
+          right: {  }
+          footer: {  }
     regions:
       header:
         - field_image

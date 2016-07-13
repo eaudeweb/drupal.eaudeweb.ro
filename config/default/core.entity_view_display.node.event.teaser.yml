@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
-    - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
     - field.field.node.event.field_google_location_string
@@ -13,6 +12,7 @@ dependencies:
     - field.field.node.event.field_location
     - field.field.node.event.field_start_date
     - field.field.node.event.field_tags
+    - field.field.node.event.yamlform
     - image.style.medium
     - node.type.event
   module:
@@ -37,7 +37,7 @@ third_party_settings:
           footer: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: content
+        link_attribute: ''
         link_custom: ''
         classes:
           layout_class:
@@ -126,32 +126,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: minimal
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: ''
-            fi-cl: center-image
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+            classes: {  }
   field_start_date:
     type: datetime_default
     weight: 2
@@ -200,8 +179,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  comment: true
   field_description: true
   field_end_date: true
   field_google_location_string: true
   field_location: true
+  yamlform: true

@@ -1,0 +1,268 @@
+langcode: en
+status: false
+dependencies: {  }
+id: example_elements_extras
+title: 'Example: Elements extras'
+description: 'Examples of custom YAML form specific element properties and additional form elements provide by the YAML form module and contrib module.'
+elements: |
+  custom_element_properties:
+    '#type': details
+    '#title': 'Custom Element Properties'
+    '#open': true
+    unique:
+      '#type': textfield
+      '#title': 'Unique value'
+      '#description': 'Add <code>#unique: true</code> property to an element to require all entered values to be unique. The same value is not allowed to be used twice.'
+      '#unique': true
+    private:
+      '#type': textfield
+      '#title': 'Private element'
+      '#description': 'Add <code>#private: true</code> property to an element to only show the element to users with results access.'
+      '#private': true
+  markup_elements:
+    '#type': details
+    '#title': 'Markup Elements'
+    '#open': true
+    markup:
+      '#markup': '<p>This is normal markup</p>'
+    markup_form:
+      '#type': 'markup'
+      '#markup': '<p>This is only displayed on the form view. (''display_on:'': form).</p>'
+      '#display_on': form
+    markup_view:
+      '#type': 'markup'
+      '#markup': '<p>This is only displayed on the submission view. (''display_on:'': view).</p>'
+      '#display_on': view
+    markup_both:
+      '#type': 'markup'
+      '#markup': '<p>This is displayed on the both the form and submission view. (''display_on:'': both)</p>'
+      '#display_on': both
+  codemirror_elements:
+    '#type': details
+    '#title': 'CodeMirror Elements'
+    '#open': true
+    codemirror_text:
+      '#type': codemirror
+      '#mode': text
+      '#title': 'Text'
+    codemirror_yaml:
+      '#type': codemirror
+      '#mode': yaml
+      '#title': 'YAML'
+    codemirror_html:
+      '#type': codemirror
+      '#mode': html
+      '#title': 'HTML'
+  email_multiple:
+    '#type': details
+    '#title': 'Email multiple (email_multiple)'
+    '#open': true
+    email_multiple_basic:
+      '#type': email_multiple
+      '#title': 'Multiple email addresses'
+  email_confirm:
+    '#type': details
+    '#title': 'Email confirmation (email_confirm)'
+    '#open': true
+    email_confirm_basic:
+      '#type': email_confirm
+      '#title': 'Email confirm basic'
+    email_confirm_advanced:
+      '#type': email_confirm
+      '#title': 'Email confirm advanced'
+      '#confirm_title': 'Please confirm your email address'
+  select_other:
+    '#type': details
+    '#title': 'Select other (select_other)'
+    '#open': true
+    select_other_basic:
+      '#type': select_other
+      '#title': 'Select other basic'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+    select_other_advanced:
+      '#type': select_other
+      '#title': 'Select other advanced'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+      '#other_option_label': 'Is there another option you wish to enter?'
+      '#other_placeholder': 'What is this other option'
+      '#other_description': 'Other option description'
+      '#empty_option': Select...
+      '#empty_value': ''
+    select_other_multiple:
+      '#type': select_other
+      '#title': 'Select other multiple'
+      '#multiple': true
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+  checkboxes_other:
+    '#type': details
+    '#title': 'Checkboxes other (checkboxes_other)'
+    '#open': true
+    checkboxes_other_basic:
+      '#type': checkboxes_other
+      '#title': 'Checkboxes other basic'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+    checkboxes_other_advanced:
+      '#type': checkboxes_other
+      '#title': 'Checkboxes other advanced'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+      '#other_option_label': 'Is there another option you wish to enter?'
+      '#other_placeholder': 'What is this other option'
+      '#other_description': 'Other checkbox description'
+  radios_other:
+    '#type': details
+    '#title': 'Radios other (radios_other)'
+    '#open': true
+    radios_other_basic:
+      '#type': radios_other
+      '#title': 'Radios other basic'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+    radios_other_advanced:
+      '#type': radios_other
+      '#title': 'Radios other advanced'
+      '#options':
+        One: One
+        Two: Two
+        Three: Three
+      '#other_option_label': 'Is there another option you wish to enter?'
+      '#other_placeholder': 'What is this other option'
+      '#other_description': 'Other radio description'
+  likert_elements:
+    '#type': details
+    '#title': 'Likert Elements'
+    '#open': true
+    likert_basic:
+      '#type': likert
+      '#title': 'Likert basic'
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3:  'Finally, here is question 3?'
+      '#answers': likert_agreement
+    '#default_values':
+      q1: 3
+      q2: 4
+      q3: 5
+  composite_elements:
+    '#type': details
+    '#title': 'Composite Elements'
+    '#open': true
+    address:
+      '#type': address
+      '#title': 'Address'
+    contact:
+      '#type': contact
+      '#title': 'Contact'
+    creditcard:
+      '#type': creditcard
+      '#title': 'Credit Card'
+  contrib_elements:
+    '#type': details
+    '#title': 'Contrib Elements'
+    '#description': 'Below are examples of custom elements and properties provided by the <a href="https://www.drupal.org/project/captcha">CAPTCHA</a> and <a href="https://www.drupal.org/project/validators">Validators</a> module. <i>These elements only appear when these modules have been downloaded and installed.</i>'
+    '#open': true
+    captcha:
+      '#type': 'captcha'
+    validators:
+      '#type': details
+      '#title': 'Validators'
+      '#open': true
+      validators_email:
+        '#type': textfield
+        '#title': 'E-mail address'
+        '#validators':
+          - Email
+        '#test': 'example@example.com'
+      validators_isbn:
+        '#type': textfield
+        '#title': 'Bank account (ISBN format)'
+        '#test':
+          - '1-84356-028-3'
+          - '0-684-84328-5'
+          - '0-8044-2957-X'
+        '#validators':
+          Isbn:
+            message: |
+              This value is an invalid bank account number. Please respect the <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number">ISBN format</a>.
+settings:
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_closed_message: ''
+  form_exception_message: ''
+  form_submit_label: ''
+  form_prepopulate: false
+  form_confidential: false
+  form_confidential_message: ''
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_next_button_label: ''
+  wizard_prev_button_label: ''
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_prev_button_label: ''
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_message: ''
+  confirmation_url: ''
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers: {  }

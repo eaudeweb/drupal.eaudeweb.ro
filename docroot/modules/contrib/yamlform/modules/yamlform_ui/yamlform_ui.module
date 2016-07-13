@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Administrative interface for YAML forms.
+ */
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function yamlform_ui_entity_type_alter(array &$entity_types) {
+  if (isset($entity_types['yamlform'])) {
+    /** @var \Drupal\Core\Entity\ContentEntityTypeInterface $entity_type */
+    $entity_type = $entity_types['yamlform'];
+
+    // Swap the 'default' form handler with the YAML form UI entity form
+    // and move the old YAML form source entity form to a new 'source'
+    // form handler.
+    $handlers = $entity_type->getHandlerClasses();
+    $handlers['form']['source'] = $handlers['form']['default'];
+    $handlers['form']['default'] = 'Drupal\yamlform_ui\YamlFormUiEntityForm';
+    $handlers['form']['duplicate'] = 'Drupal\yamlform_ui\YamlFormUiEntityForm';
+    $entity_type->setHandlerClass('form', $handlers['form']);
+  }
+}

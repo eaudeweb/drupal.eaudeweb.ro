@@ -1,0 +1,22 @@
+/**
+ * @file
+ * YAML form UI styling
+ */
+
+th.yamlform-ui-element-operations {
+  width: 140px;
+}
+
+tr.yamlform-ui-element-type-details,
+tr.yamlform-ui-element-type-fieldset {
+  border-top: 2px dashed #a6a6a6;
+  font-weight: bold;
+}
+
+tr.yamlform-ui-element-type-yamlform_wizard_page {
+  border-top: 2px solid #a6a6a6;
+}
+
+thead th .dropbutton {
+  text-transform: none;
+}

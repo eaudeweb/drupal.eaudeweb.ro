@@ -1,0 +1,13 @@
+name: 'YAML Form Templates'
+type: module
+description: 'Additional starter templates to help create new forms (includes Job Application, Registration, and Subscribe templates).'
+package: 'YAML Form'
+# core: 8.x
+dependencies:
+  - yamlform
+
+# Information added by Drupal.org packaging script on 2016-07-12
+version: '8.x-1.0-beta7'
+core: '8.x'
+project: 'yamlform'
+datestamp: 1468286942

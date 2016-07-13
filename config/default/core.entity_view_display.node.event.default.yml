@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
     - field.field.node.event.field_google_location_string
@@ -12,15 +11,16 @@ dependencies:
     - field.field.node.event.field_location
     - field.field.node.event.field_start_date
     - field.field.node.event.field_tags
+    - field.field.node.event.yamlform
     - node.type.event
   module:
-    - comment
     - datetime
     - ds
     - image
     - simple_gmap
     - text
     - user
+    - yamlform
 third_party_settings:
   ds:
     layout:
@@ -44,10 +44,12 @@ third_party_settings:
           header: {  }
           left:
             layout-two-thirds: layout-two-thirds
+            nopadding: nopadding
           right:
             layout-one-third: layout-one-third
             well: well
-          footer: {  }
+          footer:
+            layout-footer: layout-footer
     regions:
       left:
         - field_image
@@ -60,7 +62,7 @@ third_party_settings:
         - field_tags
       footer:
         - links
-        - comment
+        - yamlform
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -72,13 +74,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-  comment:
-    weight: 8
-    label: above
-    settings:
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
   field_end_date:
     weight: 3
     label: inline
@@ -148,32 +143,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: minimal
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: ''
-            fi-cl: center-image
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+            classes: {  }
     type: image
   field_location:
     weight: 4
@@ -208,5 +182,11 @@ content:
     weight: 7
     settings: {  }
     third_party_settings: {  }
+  yamlform:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: yamlform_entity_reference_entity_view
 hidden:
   field_description: true

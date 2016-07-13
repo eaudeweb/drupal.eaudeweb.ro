@@ -1,0 +1,13 @@
+name: 'YAML Form UI'
+type: module
+description: 'Administrative interface for YAML forms.'
+package: 'YAML Form (Experimental)'
+# core: 8.x
+dependencies:
+  - yamlform
+
+# Information added by Drupal.org packaging script on 2016-07-12
+version: '8.x-1.0-beta7'
+core: '8.x'
+project: 'yamlform'
+datestamp: 1468286942

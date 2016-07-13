@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
     - field.field.node.event.field_google_location_string
@@ -12,14 +11,15 @@ dependencies:
     - field.field.node.event.field_location
     - field.field.node.event.field_start_date
     - field.field.node.event.field_tags
+    - field.field.node.event.yamlform
     - image.style.thumbnail
     - node.type.event
   module:
-    - comment
     - datetime
     - image
     - path
     - text
+    - yamlform
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -33,11 +33,6 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  comment:
-    weight: 27
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
   created:
     type: datetime_timestamp
     weight: 2
@@ -121,4 +116,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  yamlform:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: yamlform_entity_reference_autocomplete
 hidden: {  }

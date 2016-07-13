@@ -1,0 +1,9 @@
+uuid: d4259554-58e9-4a8b-8f94-cb02129f5dd5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kGcyvGIBbrKIldiBULRu57_uvgRE0lEsnBvFA16brf4
+id: yes_no
+label: Yes/No
+options: "Yes: Yes\nNo: No\n"

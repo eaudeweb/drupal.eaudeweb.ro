@@ -1,0 +1,13 @@
+yamlform_ui:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform_ui.module.css: {}
+
+yamlform_ui.admin:
+  version: 1.x
+  js:
+    js/yamlform_ui.admin.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

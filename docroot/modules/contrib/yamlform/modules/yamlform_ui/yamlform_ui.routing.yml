@@ -1,0 +1,68 @@
+entity.yamlform.source_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/source'
+  defaults:
+    _title_callback: '\Drupal\yamlform\Controller\YamlFormController::title'
+    _entity_form: 'yamlform.source'
+  options:
+    parameters:
+      node:
+        type: 'entity:node'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormSourceAccess'
+
+entity.yamlform_ui.element:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/add'
+  defaults:
+    _controller: '\Drupal\yamlform_ui\Controller\YamlFormUiElementController::listElements'
+    _title: 'Select an element'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormEditAccess'
+
+entity.yamlform_ui.element.add_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/add/{type}'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementAddForm'
+    _title: 'Add element'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormEditAccess'
+
+entity.yamlform_ui.element.add_page_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/add/wizard_page'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementAddForm'
+    _title: 'Add page'
+    type: 'wizard_page'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormEditAccess'
+
+entity.yamlform_ui.element.edit_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/{key}/edit'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementEditForm'
+    _title: 'Edit element'
+  requirements:
+    _permission: 'administer yamlform'
+
+entity.yamlform_ui.element.duplicate_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/{key}/duplicate'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementDuplicateForm'
+    _title: 'Duplicate element'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormEditAccess'
+
+entity.yamlform_ui.element.delete_form:
+  path: '/admin/structure/yamlform/manage/{yamlform}/element/{key}/delete'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementDeleteForm'
+    _title: 'Delete element'
+  requirements:
+    _custom_access: '\Drupal\yamlform_ui\Access\YamlFormUiAccess::checkYamlFormEditAccess'
+
+yamlform.element_plugins.test:
+  path: '/admin/structure/yamlform/settings/elements/{type}/test'
+  defaults:
+    _form: '\Drupal\yamlform_ui\Form\YamlFormUiElementTestForm'
+    _title: 'Test element'
+  requirements:
+    _permission: 'administer yamlform'

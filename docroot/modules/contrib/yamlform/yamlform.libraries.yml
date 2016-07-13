@@ -1,0 +1,120 @@
+yamlform:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.module.css: {}
+
+yamlform.theme.seven:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.theme.seven.css: {}
+
+yamlform.element.color:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.element.color.css: {}
+
+yamlform.element.composite:
+  version: 1.x
+  js:
+    js/yamlform.element.composite.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+yamlform.element.likert:
+  version: 1.x
+  css:
+    component:
+      css/yamlform.element.likert.css: {}
+
+yamlform.element.other:
+  version: 1.x
+  css:
+    component:
+      css/yamlform.element.other.css: {}
+  js:
+    js/yamlform.element.other.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+yamlform.navigation:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.navigation.css: {}
+
+yamlform.form:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.form.css: {}
+  js:
+    js/yamlform.form.js:  {}
+
+yamlform.progress:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.progress.css: {}
+
+yamlform.progress.bar:
+  version: 1.x
+  css:
+    theme:
+      css/yamlform.progress.bar.css: {}
+
+codemirror.text:
+  remote: https://github.com/codemirror/codemirror
+  version: &yamlform_codemirror_version 5.16.0
+  license: &yamlform_codemirror_license
+    name: MIT
+    url: http://codemirror.net/LICENSE
+    gpl-compatible: true
+  cdn: &yamlform_codemirror_cdn
+    /libraries/codemirror/lib/: https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/
+    /libraries/codemirror/: https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/
+  css:
+    theme:
+      css/yamlform.element.codemirror.css: {}
+      /libraries/codemirror/lib/codemirror.css: {}
+  js:
+    js/yamlform.element.codemirror.js: {}
+    /libraries/codemirror/lib/codemirror.js: {}
+    /libraries/codemirror/addon/runmode/runmode.js: {}
+
+codemirror.yaml:
+  version: *yamlform_codemirror_version
+  license: *yamlform_codemirror_license
+  cdn: *yamlform_codemirror_cdn
+  js:
+    /libraries/codemirror/mode/yaml/yaml.js: {}
+  dependencies:
+    - yamlform/codemirror.text
+
+codemirror.html:
+  version: *yamlform_codemirror_version
+  license: *yamlform_codemirror_license
+  cdn: *yamlform_codemirror_cdn
+  js:
+    /libraries/codemirror/mode/xml/xml.js: {}
+    /libraries/codemirror/mode/htmlmixed/htmlmixed.js: {}
+  dependencies:
+    - yamlform/codemirror.text
+
+jquery.inputmask:
+  remote: https://github.com/RobinHerbots/jquery.inputmask
+  version: &yamlform_codemirror_version 3.3.0
+  license: &yamlform_codemirror_license
+    name: MIT
+    url: http://opensource.org/licenses/mit-license.php
+    gpl-compatible: true
+  cdn:
+    /libraries/jquery.inputmask/dist/: https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.0/
+  js:
+    js/yamlform.jquery.inputmask.js: {}
+    /libraries/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js: {}
+
