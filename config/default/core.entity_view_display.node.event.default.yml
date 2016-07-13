@@ -189,4 +189,5 @@ content:
     third_party_settings: {  }
     type: yamlform_entity_reference_entity_view
 hidden:
+  comment: true
   field_description: true

@@ -179,6 +179,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  comment: true
   field_description: true
   field_end_date: true
   field_google_location_string: true
