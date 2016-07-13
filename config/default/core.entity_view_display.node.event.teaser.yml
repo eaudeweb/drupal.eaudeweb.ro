@@ -56,6 +56,7 @@ third_party_settings:
         - node_title
         - field_start_date
         - body
+        - field_tags
       footer:
         - links
     fields:
@@ -186,8 +187,15 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
-  links:
+  field_tags:
+    type: entity_reference_label
     weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 5
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -195,4 +203,3 @@ hidden:
   field_end_date: true
   field_google_location_string: true
   field_location: true
-  field_tags: true

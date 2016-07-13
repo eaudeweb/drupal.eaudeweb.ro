@@ -55,8 +55,8 @@ third_party_settings:
         - field_end_date
         - field_location
         - field_google_location_string
-      footer:
         - field_tags
+      footer:
         - links
 id: node.event.default
 targetEntityType: node

@@ -45,6 +45,7 @@ third_party_settings:
         - field_image
         - field_start_date
         - body
+        - node_link
     fields:
       node_title:
         plugin_id: node_title
@@ -61,6 +62,43 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'View event'
+          'link class': ''
+          wrapper: ''
+          class: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: 'links links-move-left'
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
 id: node.event.mini_teaser
 targetEntityType: node
 bundle: event
@@ -80,6 +118,28 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+  field_description:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_end_date:
+    type: datetime_default
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_google_location_string:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_image:
     type: image
     weight: 1
@@ -116,6 +176,13 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
+  field_location:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_start_date:
     type: datetime_default
     weight: 2
@@ -131,10 +198,15 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-hidden:
-  field_description: true
-  field_end_date: true
-  field_google_location_string: true
-  field_location: true
-  field_tags: true
-  links: true
+  field_tags:
+    type: entity_reference_label
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
