@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - node.type.article
     - node.type.event
   module:
     - node
@@ -173,6 +174,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            article: article
             event: event
           group: 1
           exposed: false

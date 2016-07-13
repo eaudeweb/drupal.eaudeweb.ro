@@ -12,6 +12,7 @@ classes:
     - col-md-4
     - well
     - row
+    - hover-effect
   field: {  }
 use_field_names: true
 _core:

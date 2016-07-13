@@ -7,13 +7,40 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large
+    - image.style.medium
     - node.type.article
   module:
     - comment
+    - ds
     - image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col_stacked
+      disable_css: true
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      header:
+        - field_image
+        - body
+        - field_tags
+        - comment
+        - links
 _core:
   default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
 id: node.article.default
@@ -38,9 +65,16 @@ content:
     type: image
     weight: -1
     settings:
-      image_style: large
+      image_style: medium
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     label: hidden
   field_tags:
     type: entity_reference_label
@@ -51,6 +85,6 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden:
-  field_image: true
-  field_tags: true
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
