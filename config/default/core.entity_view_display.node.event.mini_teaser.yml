@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.mini_teaser
     - field.field.node.event.body
+    - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
     - field.field.node.event.field_google_location_string
@@ -209,4 +210,5 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  comment: true

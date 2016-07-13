@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
     - field.field.node.event.field_google_location_string
@@ -14,6 +15,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.event
   module:
+    - comment
     - datetime
     - image
     - path
@@ -31,6 +33,11 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  comment:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
   created:
     type: datetime_timestamp
     weight: 2
