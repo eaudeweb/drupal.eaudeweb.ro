@@ -1,9 +1,9 @@
-uuid: 70322dae-6540-4940-b643-627d2780fe75
+uuid: ec76d3fb-c746-45d1-aefa-f5a4a5878864
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.mini_teaser
     - field.field.node.event.body
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
@@ -23,89 +23,55 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_2col_stacked
+      id: ds_1col
       path: modules/contrib/ds
-      library: layout_plugin/ds_2col_stacked
-      disable_css: true
+      library: ''
+      disable_css: false
       entity_classes: all_classes
       settings:
         wrappers:
-          header: div
-          left: div
-          right: div
-          footer: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: content
+        link_attribute: ''
         link_custom: ''
         classes:
           layout_class:
-            well: well
-            hover-effect: hover-effect
-          header: {  }
-          left:
-            layout-one-third: layout-one-third
-          right:
-            layout-two-thirds: layout-two-thirds
-          footer:
-            layout-footer-links-teaser: layout-footer-links-teaser
+            mini-teaser-bottom-border: mini-teaser-bottom-border
+          ds_content: {  }
     regions:
-      left:
-        - field_image
-      right:
+      ds_content:
         - node_title
+        - field_image
         - field_start_date
         - body
-      footer:
-        - links
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: h2
-          class: teaser-title
+          class: ''
         ft:
-          id: expert
+          id: default
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
-id: node.event.teaser
+            classes: {  }
+id: node.event.mini_teaser
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: mini_teaser
 content:
   body:
-    label: hidden
     type: text_trimmed
     weight: 3
+    label: hidden
     settings:
-      trim_length: 500
+      trim_length: 400
     third_party_settings:
       ds:
         ft:
@@ -116,7 +82,7 @@ content:
             classes: {  }
   field_image:
     type: image
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: medium
@@ -153,46 +119,22 @@ content:
   field_start_date:
     type: datetime_default
     weight: 2
-    label: hidden
+    label: inline
     settings:
       timezone_override: ''
       format_type: easy_read_date
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: default
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
-  links:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
+            classes: {  }
 hidden:
   field_description: true
   field_end_date: true
   field_google_location_string: true
   field_location: true
   field_tags: true
+  links: true

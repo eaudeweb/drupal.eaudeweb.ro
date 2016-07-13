@@ -13,6 +13,7 @@ classes:
     - well
     - row
     - hover-effect
+    - mini-teaser-bottom-border
   field: {  }
 use_field_names: true
 _core:

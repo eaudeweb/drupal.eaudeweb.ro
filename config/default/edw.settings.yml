@@ -7,13 +7,24 @@ favicon:
   url: 'http://drupaledw.localhost/themes/edw/favicon.ico'
   use_default: true
 schema: '8000'
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: themes/edw/images/logo.png
   url: ''
   use_default: false
 fluid_container: 1
+breadcrumb_home: 1
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: well
+  sidebar_second: well
+  footer: ''

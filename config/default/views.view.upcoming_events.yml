@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.mini_teaser
     - node.type.event
   module:
     - datetime
@@ -60,7 +60,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: mini_teaser
       fields:
         title:
           id: title
@@ -213,7 +213,18 @@ display:
           plugin_id: datetime
       sorts: {  }
       title: 'Upcoming events'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<h3 class="well-title">Upcoming events</h3>'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -224,6 +235,7 @@ display:
         groups:
           1: AND
           2: OR
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
