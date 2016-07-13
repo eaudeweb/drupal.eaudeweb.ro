@@ -10,8 +10,8 @@ _core:
   default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
 id: edw_messages
 theme: edw
-region: header
-weight: -7
+region: highlighted
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

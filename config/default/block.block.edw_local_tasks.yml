@@ -8,8 +8,8 @@ _core:
   default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
 id: edw_local_tasks
 theme: edw
-region: header
-weight: -7
+region: highlighted
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
