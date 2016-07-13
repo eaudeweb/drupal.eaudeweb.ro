@@ -158,7 +158,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Events
+      title: Evenimente
       header: {  }
       footer: {  }
       empty: {  }
@@ -181,12 +181,16 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: events
+      path: evenimente
       menu:
         type: normal
-        title: Events
-        menu_name: main
+        title: Evenimente
+        description: ''
+        expanded: false
+        parent: ''
         weight: -49
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

@@ -169,6 +169,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_description: true
   field_end_date: true
   field_google_location_string: true
   field_location: true

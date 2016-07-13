@@ -4,16 +4,26 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://drupaledw.localhost/themes/edw/favicon.ico'
+  url: 'http://edwdev.localhost/themes/edw/favicon.ico'
   use_default: true
 schema: '8000'
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: themes/edw/images/logo.png
   url: ''
   use_default: false
 fluid_container: 1
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

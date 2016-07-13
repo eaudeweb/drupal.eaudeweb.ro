@@ -212,7 +212,7 @@ display:
             group_items: {  }
           plugin_id: datetime
       sorts: {  }
-      title: 'Upcoming events'
+      title: 'Evenimente viitoare'
       header: {  }
       footer: {  }
       empty: {  }
