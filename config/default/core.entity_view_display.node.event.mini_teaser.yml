@@ -180,5 +180,6 @@ hidden:
   field_google_location_string: true
   field_location: true
   field_tags: true
+  langcode: true
   links: true
   yamlform: true

@@ -111,3 +111,4 @@ content:
 hidden:
   comment: true
   field_tags: true
+  langcode: true

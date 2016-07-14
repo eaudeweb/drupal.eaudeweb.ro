@@ -33,4 +33,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: yamlform_entity_reference_entity_view
-hidden: {  }
+hidden:
+  langcode: true

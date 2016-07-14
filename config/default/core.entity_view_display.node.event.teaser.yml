@@ -216,4 +216,5 @@ hidden:
   field_form_button_text: true
   field_google_location_string: true
   field_location: true
+  langcode: true
   yamlform: true

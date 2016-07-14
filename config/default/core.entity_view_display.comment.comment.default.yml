@@ -107,4 +107,5 @@ content:
             fi: false
             fi-def-at: false
 hidden:
+  langcode: true
   links: true

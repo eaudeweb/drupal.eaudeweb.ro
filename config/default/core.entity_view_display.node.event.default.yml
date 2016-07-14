@@ -294,3 +294,4 @@ content:
     type: yamlform_entity_reference_entity_view
 hidden:
   field_description: true
+  langcode: true
