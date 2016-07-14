@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_form_button_text
     - field.field.node.event.field_google_location_string
     - field.field.node.event.field_image
     - field.field.node.event.field_location
@@ -62,9 +63,10 @@ third_party_settings:
         - field_location
         - field_google_location_string
         - field_tags
+        - field_form_button_text
+        - yamlform
       footer:
         - links
-        - yamlform
         - comment
 id: node.event.default
 targetEntityType: node
@@ -79,7 +81,7 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 9
+    weight: 10
     label: above
     settings:
       pager_id: 0
@@ -99,6 +101,41 @@ content:
             lb-col: false
             classes: {  }
     type: datetime_default
+  field_form_button_text:
+    type: string
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: button
+            ow-cl: 'btn btn-primary btn-sm'
+            ow-at: 'target="#myModal" data-toggle="modal" type="button"'
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
   field_google_location_string:
     weight: 5
     label: hidden
@@ -189,14 +226,42 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 7
+    weight: 9
     settings: {  }
     third_party_settings: {  }
   yamlform:
     weight: 8
     label: above
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog">'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: modal-content
+            ow-at: ''
+            ow-def-at: true
+            ow-def-cl: true
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: '</div></div>'
+            lbw: false
+            lb-col: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
     type: yamlform_entity_reference_entity_view
 hidden:
   field_description: true

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_form_button_text
     - field.field.node.event.field_google_location_string
     - field.field.node.event.field_image
     - field.field.node.event.field_location
@@ -37,7 +38,7 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 15
+    weight: 16
     settings: {  }
     third_party_settings: {  }
   created:
@@ -57,6 +58,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_form_button_text:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_google_location_string:
     weight: 11
     settings:
