@@ -1,7 +1,0 @@
-uuid: 827783e0-d319-4bf4-a64f-0c5a50b6c6d0
-langcode: en
-status: true
-dependencies: {  }
-formId: yamlform_submission_participation_request_form
-captchaType: recaptcha/reCAPTCHA
-label: yamlform_submission_participation_request_form

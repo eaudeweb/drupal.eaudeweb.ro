@@ -1,7 +1,0 @@
-uuid: b26bb33e-40c2-4363-a21c-b805a98f8328
-langcode: en
-status: true
-dependencies: {  }
-formId: comment_comment_form
-captchaType: recaptcha/reCAPTCHA
-label: comment_comment_form

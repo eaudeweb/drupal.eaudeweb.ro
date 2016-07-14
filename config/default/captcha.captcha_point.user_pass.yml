@@ -1,7 +1,0 @@
-uuid: e986dfa5-1fa9-4077-a6a8-58ba6dc80cb3
-langcode: en
-status: false
-dependencies: {  }
-formId: user_pass
-captchaType: default
-label: null
