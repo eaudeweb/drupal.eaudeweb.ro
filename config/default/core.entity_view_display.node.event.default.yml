@@ -239,13 +239,14 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog">'
-            lbw-el: ''
-            lbw-cl: ''
+            prefix: '<div class="modal fade" id="myModal" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content">'
+            lbw: true
+            lbw-el: h4
+            lbw-cl: 'modal-header participation-request-header'
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: modal-content
+            ow-cl: modal-body
             ow-at: ''
             ow-def-at: true
             ow-def-cl: true
@@ -255,8 +256,7 @@ content:
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: '</div></div>'
-            lbw: false
+            suffix: '</div></div></div>'
             lb-col: false
             fis: false
             fis-def-at: false
