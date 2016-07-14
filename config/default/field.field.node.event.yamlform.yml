@@ -1,0 +1,30 @@
+uuid: a789f933-8778-4bfa-9943-abf801a5a8ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.yamlform
+    - node.type.event
+    - yamlform.yamlform.participation_request
+  module:
+    - yamlform
+id: node.event.yamlform
+field_name: yamlform
+entity_type: node
+bundle: event
+label: 'Participation request'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_data: ''
+    status: '1'
+    target_uuid: 3b88e72a-d322-4f83-9783-f7acbb7893c8
+default_value_callback: ''
+settings:
+  default_data: ''
+  status: true
+  handler: 'default:yamlform'
+  handler_settings: {  }
+field_type: yamlform

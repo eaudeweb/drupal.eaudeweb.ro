@@ -1,0 +1,32 @@
+uuid: 4dd9b4c4-3bfe-4b20-b787-d46de338e51f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.yamlform
+    - node.type.yamlform
+    - yamlform.yamlform.participation_request
+  module:
+    - yamlform
+_core:
+  default_config_hash: x5qqxmyunVyGvl4xiAXqI_cIUdM1OWKXxTrKbIvKN5U
+id: node.yamlform.yamlform
+field_name: yamlform
+entity_type: node
+bundle: yamlform
+label: 'YAML form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: '1'
+    target_uuid: 3b88e72a-d322-4f83-9783-f7acbb7893c8
+default_value_callback: ''
+settings:
+  default_data: ''
+  status: true
+  handler: 'default:yamlform'
+  handler_settings: {  }
+field_type: yamlform

@@ -1,0 +1,30 @@
+uuid: 859cdb19-c5d0-4ba6-bcde-7664f8a82167
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - edw
+id: views_block__upcoming_events_block_1
+theme: edw
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:upcoming_events-block_1'
+settings:
+  id: 'views_block:upcoming_events-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/events/*'
+    negate: true
+    context_mapping: {  }

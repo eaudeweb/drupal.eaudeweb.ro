@@ -1,0 +1,22 @@
+uuid: 4db0da49-de04-4af7-8cf1-aafdde139f0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - edw
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: edw_help
+theme: edw
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

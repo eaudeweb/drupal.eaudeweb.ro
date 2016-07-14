@@ -1,0 +1,112 @@
+uuid: 3b88e72a-d322-4f83-9783-f7acbb7893c8
+langcode: en
+status: true
+dependencies: {  }
+id: participation_request
+title: 'Participation request'
+description: ''
+elements: "name:\n  '#title': Name\n  '#description': '  '\n  '#type': textfield\nemail:\n  '#title': Email\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#type': email\nmessage:\n  '#title': Message\n  '#description': '    '\n  '#default_value': 'I would like to participate!'\n  '#type': textarea\nevent:\n  '#value': '[current-page:title]'\n  '#type': value\n"
+settings:
+  id: participation_request
+  title: 'Participation request'
+  description: ''
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_closed_message: ''
+  form_exception_message: ''
+  form_submit_label: ''
+  form_confidential: false
+  form_confidential_message: ''
+  form_prepopulate: false
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_complete: true
+  wizard_start_label: ''
+  wizard_complete_label: ''
+  preview: 0
+  preview_next_button_label: ''
+  preview_prev_button_label: ''
+  preview_message: ''
+  draft: false
+  draft_auto_save: false
+  draft_button_label: ''
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_message: ''
+  confirmation_url: ''
+  limit_total: null
+  entity_limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  entity_limit_user: null
+  limit_user_message: ''
+  results_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: false
+    weight: 1
+    settings:
+      to_mail: default
+      cc_mail: ''
+      bcc_mail: ''
+      from_mail: default
+      from_name: default
+      subject: default
+      body: default
+      excluded_elements: {  }
+      html: true
+      attachments: false
+      debug: false
+  email_1:
+    id: email
+    label: 'Email to atendee'
+    handler_id: email_1
+    status: true
+    weight: 2
+    settings:
+      to_mail: '[yamlform-submission:values:email:value]'
+      cc_mail: ''
+      bcc_mail: ''
+      from_mail: default
+      from_name: default
+      subject: 'Te asteptam la evenimentul [yamlform-submission:values:event]!'
+      body: "Salut, [yamlform-submission:values:name]!\r\n<p>\r\nIti multumim pentru interes si te asteptam!\r\n</p>\r\n\r\n\r\n<p>\r\nEchipa Eau de Web\r\n</p>"
+      excluded_elements: {  }
+      html: true
+      attachments: false
+      debug: false

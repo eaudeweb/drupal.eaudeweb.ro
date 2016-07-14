@@ -1,0 +1,42 @@
+uuid: 0e936e02-a857-4f99-9214-c5bb81000079
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - ctools
+    - system
+    - user
+  theme:
+    - edw
+_core:
+  default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
+id: edw_tools
+theme: edw
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

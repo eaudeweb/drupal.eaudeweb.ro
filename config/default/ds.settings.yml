@@ -1,0 +1,23 @@
+disabled: false
+field_template: true
+ft-default: default
+ft-show-colon: false
+classes:
+  region:
+    - layout-two-thirds
+    - layout-one-third
+    - layout-footer
+    - layout-footer-links-teaser
+    - col-md-8
+    - col-md-4
+    - well
+    - row
+    - hover-effect
+    - mini-teaser-bottom-border
+    - nopadding
+    - panel
+    - panel-default
+  field: {  }
+use_field_names: true
+_core:
+  default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY
