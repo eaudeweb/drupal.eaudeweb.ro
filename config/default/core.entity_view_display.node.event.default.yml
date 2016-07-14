@@ -120,7 +120,7 @@ content:
             ow: true
             ow-el: button
             ow-cl: 'btn btn-primary btn-sm'
-            ow-at: 'target="#myModal" data-toggle="modal" type="button"'
+            ow-at: 'data-target="#myModal" data-toggle="modal" type="button"'
             fis-el: ''
             fis-cl: ''
             fis-at: ''
