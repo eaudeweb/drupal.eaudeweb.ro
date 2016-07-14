@@ -92,3 +92,21 @@ handlers:
       html: true
       attachments: false
       debug: false
+  email_1:
+    id: email
+    label: Email
+    handler_id: email_1
+    status: true
+    weight: 2
+    settings:
+      to_mail: '[yamlform-submission:values:email:value]'
+      cc_mail: ''
+      bcc_mail: ''
+      from_mail: default
+      from_name: default
+      subject: 'Te asteptam la evenimentul [yamlform-submission:values:event]'
+      body: "Salut\r\n\r\nTe asteptam la evenimentul [yamlform-submission:values:event]\r\n\r\nEchipa Eau de Web"
+      excluded_elements: {  }
+      html: true
+      attachments: false
+      debug: false
