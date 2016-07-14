@@ -78,7 +78,7 @@ handlers:
     id: email
     label: Email
     handler_id: email
-    status: true
+    status: false
     weight: 1
     settings:
       to_mail: default
