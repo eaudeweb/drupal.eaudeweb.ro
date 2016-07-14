@@ -119,7 +119,7 @@ content:
             lbw-at: ''
             ow: true
             ow-el: button
-            ow-cl: 'btn btn-primary btn-sm'
+            ow-cl: 'btn btn-primary btn-block'
             ow-at: 'data-target="#myModal" data-toggle="modal" type="button"'
             fis-el: ''
             fis-cl: ''
@@ -220,10 +220,39 @@ content:
     type: datetime_default
   field_tags:
     weight: 6
-    label: above
+    label: inline
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: 'Tags:'
+            prefix: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: span
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
     type: entity_reference_label
   links:
     weight: 9

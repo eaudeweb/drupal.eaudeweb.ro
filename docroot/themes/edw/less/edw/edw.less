@@ -253,13 +253,13 @@ a:hover, a:focus {
 }
 
 .layout-two-thirds {
-  .no-left-padding;
+  //.no-left-padding;
   .make-sm-column(8);
   padding-bottom: 15px;
 }
 
 .layout-one-third {
-  .no-right-padding;
+  //.no-right-padding;
   .make-sm-column(4);
   padding-bottom: 15px;
 
@@ -332,3 +332,12 @@ h2{
   padding-left:0px !important;
   padding-top:0px !important;
 }
+.btn-primary{
+  color: #fff;
+  background-color: @green;
+  border-color: @green-light;
+}
+.btn-primary:focus, .btn-primary.focus,.btn-primary:hover{
+   background-color: darken(@green,10%);
+   border-color: @green;
+ }

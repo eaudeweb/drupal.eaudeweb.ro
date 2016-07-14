@@ -1,0 +1,21 @@
+uuid: 39ada1bf-7247-4d28-9ba5-f09da90e325f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+id: taxonomy_term.tags.token
+targetEntityType: taxonomy_term
+bundle: tags
+mode: token
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
