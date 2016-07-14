@@ -57,7 +57,7 @@ third_party_settings:
         settings:
           link: true
           wrapper: h2
-          class: ''
+          class: small-title
         ft:
           id: default
           settings:
@@ -120,28 +120,6 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_description:
-    type: string
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_end_date:
-    type: datetime_default
-    weight: 0
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-  field_google_location_string:
-    type: string
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_image:
     type: image
     weight: 1
@@ -178,13 +156,6 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-  field_location:
-    type: string
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_start_date:
     type: datetime_default
     weight: 2
@@ -200,17 +171,12 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-  field_tags:
-    type: entity_reference_label
-    weight: 0
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   comment: true
+  field_description: true
+  field_end_date: true
+  field_google_location_string: true
+  field_location: true
+  field_tags: true
+  links: true
   yamlform: true
