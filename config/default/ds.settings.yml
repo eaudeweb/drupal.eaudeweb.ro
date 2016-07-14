@@ -15,6 +15,8 @@ classes:
     - hover-effect
     - mini-teaser-bottom-border
     - nopadding
+    - panel
+    - panel-default
   field: {  }
 use_field_names: true
 _core:
