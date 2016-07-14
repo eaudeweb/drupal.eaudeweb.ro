@@ -15,37 +15,6 @@ dependencies:
     - image
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_2col_stacked
-      path: modules/contrib/ds
-      library: layout_plugin/ds_2col_stacked
-      disable_css: true
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          header: div
-          left: div
-          right: div
-          footer: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-          header: {  }
-          left: {  }
-          right: {  }
-          footer: {  }
-    regions:
-      header:
-        - field_image
-        - body
-        - field_tags
-        - links
-        - comment
 _core:
   default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
 id: node.article.default
