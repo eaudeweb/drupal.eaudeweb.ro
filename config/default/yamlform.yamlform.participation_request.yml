@@ -78,7 +78,7 @@ handlers:
     id: email
     label: Email
     handler_id: email
-    status: true
+    status: false
     weight: 1
     settings:
       to_mail: default
@@ -94,7 +94,7 @@ handlers:
       debug: false
   email_1:
     id: email
-    label: Email
+    label: 'Email to atendee'
     handler_id: email_1
     status: true
     weight: 2
@@ -104,8 +104,8 @@ handlers:
       bcc_mail: ''
       from_mail: default
       from_name: default
-      subject: 'Te asteptam la evenimentul [yamlform-submission:values:event]'
-      body: "Salut\r\n\r\nTe asteptam la evenimentul [yamlform-submission:values:event]\r\n\r\nEchipa Eau de Web"
+      subject: 'Te asteptam la evenimentul [yamlform-submission:values:event]!'
+      body: "Salut, [yamlform-submission:values:name]!\r\n<p>\r\nIti multumim pentru interes si te asteptam!\r\n</p>\r\n\r\n\r\n<p>\r\nEchipa Eau de Web\r\n</p>"
       excluded_elements: {  }
       html: true
       attachments: false
