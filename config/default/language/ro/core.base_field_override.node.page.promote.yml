@@ -1,0 +1,4 @@
+label: 'Promovat pe prima pagină'
+settings:
+  on_label: Pornit
+  off_label: Oprit

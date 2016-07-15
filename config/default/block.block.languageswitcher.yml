@@ -1,0 +1,20 @@
+uuid: 9c6f93de-28c3-4862-a315-908f76963787
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - edw
+id: languageswitcher
+theme: edw
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }
