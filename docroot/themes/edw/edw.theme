@@ -5,3 +5,16 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+function edw_preprocess_field(&$variables)
+{
+    $element = $variables['element'];
+    if($element['#field_name']=='field_tags'){
+        kint($element);
+    }
+    return 'test';
+}
+function edw_field__field_tags($var){
+    echo 'intra';
+}
