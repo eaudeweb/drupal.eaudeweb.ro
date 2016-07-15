@@ -1,0 +1,32 @@
+label: 'Prima pagină'
+description: 'Tot conținutul a fost promovat pe prima pagină.'
+display:
+  default:
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Încă nu există conținut creat pentru prima pagină.'
+        title:
+          title: 'Bine ați venit la [site:name]'
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+          tags:
+            next: 'Următor ›'
+            first: '« Primul'
+            last: 'Ultimul »'
+    display_title: Expert
+  feed_1:
+    display_title: Flux
+  page_1:
+    display_title: Pagina

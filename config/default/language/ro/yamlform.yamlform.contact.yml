@@ -1,0 +1,8 @@
+title: Contact
+settings:
+  form_submit_label: 'Trimiteţi mesaj'
+  confirmation_message: 'Mesajul tău a fost trimis.'
+handlers:
+  email_confirmation:
+    settings:
+      from_name: implicit
