@@ -26,13 +26,6 @@ settings:
   level: 1
   depth: 0
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      event: event
-    negate: true
-    context_mapping:
-      node: '@node.node_route_context:node'
   user_role:
     id: user_role
     roles:
@@ -40,3 +33,10 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
