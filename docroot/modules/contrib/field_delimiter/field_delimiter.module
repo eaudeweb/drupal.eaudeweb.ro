@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * @file
+ * Provides settings for delimiter on multi-value fields.
+ *
+ */
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function field_delimiter_field_formatter_info_alter(&$info) {
+  // added to ALL formatters...
+  foreach ($info as $formatter_key => &$formatter) {
+    $formatter['settings']['field_delimiter'] = '';
+  }
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary_alter().
+ */
+function field_delimiter_field_formatter_settings_summary_alter(&$summary, $context) {
+
+  if ($context['field']['cardinality'] == 1 ) {
+    return; // do nothing, not a multivalue field
+  }
+
+  $setting = $context['formatter']->getSetting('field_delimiter');
+
+  // sanitize delimiter, allow a few reasonable HTML elements
+  $safe_delimiter = filter_xss($setting, array('br', 'hr', 'span', 'img', 'wbr'));
+
+  if (!empty($safe_delimiter)) {
+    $summary[] = t('Delimited by @delimiter', array('@delimiter' => $safe_delimiter));
+  }
+  else {
+    $summary[] = t('No Delimiter');
+  }
+}
+
+/**
+ * Implements hook_field_formatter_settings_form_alter().
+ */
+function field_delimiter_field_formatter_settings_form_alter(&$element, &$form_state, $context) {
+  if ($context['field']['cardinality'] == 1 ) {
+    return; // do nothing, not a multivalue field
+  }
+
+  $element['field_delimiter'] = array(
+    '#type' => 'textfield',
+    '#size' => 5,
+    '#title' => t('Field Delimiter'),
+    '#default_value' => filter_xss($context['formatter']->getSetting('field_delimiter'), array('br', 'hr', 'span', 'img', 'wbr')),
+  );
+}
+
+/**
+ * Implements hook_field_attach_view_alter().
+ *
+ * add a delimiter after every field item except the last one.
+ */
+function field_delimiter_field_attach_view_alter(&$output, $context) {
+
+  $render_display = entity_get_render_display($context['entity'], $context['view_mode']);
+
+  foreach (element_children($output) as $field_name) {
+    // get a reference handle so we can alter the output
+    $element = &$output[$field_name];
+
+    if (count($element['#items']) < 2) {
+      continue; // do nothing, no need for delimiter
+    }
+
+    // find the delimiter setting
+    $field_display = $render_display->getComponent($field_name);
+    $delimiter = $field_display['settings']['field_delimiter'];
+
+    // sanitize the delimiter, allow a few reasonable HTML elements
+    $safe_delimiter = filter_xss($delimiter, array('br', 'hr', 'span', 'img', 'wbr'));
+
+    // modify the output if necessary
+    if (!empty($safe_delimiter)) {
+      foreach ($element['#items'] as $delta => $item ) {
+        if ($delta + 1 < count($element['#items'])) {
+          $element[$delta]['#suffix'] = $safe_delimiter;
+        }
+      } 
+    }
+  }
+}
