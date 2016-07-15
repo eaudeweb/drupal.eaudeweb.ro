@@ -124,7 +124,8 @@
                         {% set temp %}
                             {{ page.sidebar_first }}
                         {% endset %}
-                        {% if temp|trim %}
+                        {% set sidebar_first_exists = temp|trim %}
+                        {% if sidebar_first_exists %}
                             {% block sidebar_first %}
                                 <aside class="col-sm-3" role="complementary">
                                     {{ page.sidebar_first }}
@@ -134,10 +135,10 @@
 
                         {# Content #}
                         {% set content_classes = [
-                        page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-                        page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-                        page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-                        page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+                        sidebar_first_exists and page.sidebar_second ? 'col-sm-6',
+                        sidebar_first_exists and page.sidebar_second is empty ? 'col-sm-9',
+                        page.sidebar_second and sidebar_first_exists is empty ? 'col-sm-9',
+                        sidebar_first_exists is empty and page.sidebar_second is empty ? 'col-sm-12'
                         ] %}
                         <section{{ content_attributes.addClass(content_classes) }}>
 
