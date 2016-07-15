@@ -14,7 +14,7 @@ entity_type: node
 bundle: event
 label: 'Participation request'
 description: ''
-required: true
+required: false
 translatable: true
 default_value:
   -
