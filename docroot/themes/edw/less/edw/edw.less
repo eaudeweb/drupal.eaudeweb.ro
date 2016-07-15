@@ -212,15 +212,14 @@ a:hover, a:focus {
     padding-right: 5px;
     list-style: none;
   }
-  li a {
+  li a{
     background-color: @green-light;
     color: #fff;
     padding: .4em 10px .4em;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     color: #fff;
 
     &:hover {
@@ -232,7 +231,12 @@ a:hover, a:focus {
       transition: background-color 100ms linear;
 
     }
+  }
+  li:first-of-type a {
 
+    border-top-left-radius: 0px;
+
+    border-bottom-left-radius: 0px;
   }
 }
 
@@ -253,7 +257,7 @@ a:hover, a:focus {
 }
 
 .layout-two-thirds {
-  //.no-left-padding;
+  .no-left-padding;
   .make-sm-column(8);
   padding-bottom: 15px;
 }
