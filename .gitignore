@@ -25,6 +25,11 @@ conf/config.json
 conf/apache.conf
 docroot/sites/simpletest
 
+# Node #
+########
+package.json
+node_modules/
+
 # User Generated Content #
 ##########################
 docroot/file
