@@ -1,0 +1,22 @@
+uuid: 3b129073-fed0-4201-afa3-ddfac0534372
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.promote
+field_name: promote
+entity_type: node
+bundle: event
+label: 'Promovat pe prima pagină'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: c542a1c7-8f60-413d-bd6c-9cd6e445ca8c
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.changed
+field_name: changed
+entity_type: node
+bundle: article
+label: Schimbat
+description: 'Momentul în care nodul a fost editat ultima dată.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: d54b6390-3fe2-4fd8-b315-56cda554e2ec
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+id: node.yamlform.title
+field_name: title
+entity_type: node
+bundle: yamlform
+label: Titlu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

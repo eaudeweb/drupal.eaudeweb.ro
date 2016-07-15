@@ -1,0 +1,22 @@
+uuid: 81a758e7-7b39-41cd-ad06-4cd2d302c832
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.page
+id: node.page.status
+field_name: status
+entity_type: node
+bundle: page
+label: 'Statusul publicării'
+description: 'O valoare logică care indică dacă nodul este publicat.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

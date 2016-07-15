@@ -1,0 +1,18 @@
+uuid: e80e6368-9604-4a3b-91c9-ede59ad6de88
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.created
+field_name: created
+entity_type: node
+bundle: event
+label: 'Creat la'
+description: 'Momentul în care nodul a fost creat.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,22 @@
+uuid: 3d46946d-cb66-4da9-9fb7-af3053e8c531
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.sticky
+field_name: sticky
+entity_type: node
+bundle: article
+label: 'Lipicios în capul listelor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 447f1bd3-e672-4eb4-9974-8140597347b5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+id: node.yamlform.status
+field_name: status
+entity_type: node
+bundle: yamlform
+label: 'Statusul publicării'
+description: 'O valoare logică care indică dacă nodul este publicat.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

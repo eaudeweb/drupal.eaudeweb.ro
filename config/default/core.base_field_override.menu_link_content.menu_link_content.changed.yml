@@ -1,0 +1,18 @@
+uuid: 1b694b74-f123-4858-99e9-c8dbd202a18d
+langcode: ro
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: menu_link_content
+label: Schimbat
+description: 'Momentul când legătura din meniu a fost modificată ultima dată.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

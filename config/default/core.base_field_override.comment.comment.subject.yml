@@ -1,0 +1,18 @@
+uuid: 25571d2f-2744-450f-89e5-39fde1305ba4
+langcode: ro
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.subject
+field_name: subject
+entity_type: comment
+bundle: comment
+label: Subiect
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

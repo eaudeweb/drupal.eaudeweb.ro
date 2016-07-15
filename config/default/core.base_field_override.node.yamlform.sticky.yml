@@ -1,0 +1,22 @@
+uuid: 69297e4c-d392-4040-9460-c8fd973882d5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+id: node.yamlform.sticky
+field_name: sticky
+entity_type: node
+bundle: yamlform
+label: 'Lipicios în capul listelor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

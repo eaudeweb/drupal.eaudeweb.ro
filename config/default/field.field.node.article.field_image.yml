@@ -6,14 +6,21 @@ dependencies:
     - field.storage.node.field_image
     - node.type.article
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 _core:
   default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
 id: node.article.field_image
 field_name: field_image
 entity_type: node
 bundle: article
-label: Image
+label: Imagine
 description: ''
 required: false
 translatable: true

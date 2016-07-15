@@ -22,6 +22,7 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
           tags:
+            previous: '‹ Anterior'
             next: 'Următor ›'
             first: '« Primul'
             last: 'Ultimul »'

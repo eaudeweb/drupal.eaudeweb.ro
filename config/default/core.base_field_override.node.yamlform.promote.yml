@@ -10,15 +10,15 @@ id: node.yamlform.promote
 field_name: promote
 entity_type: node
 bundle: yamlform
-label: 'Promoted to front page'
+label: 'Promovat pe prima pagină'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: Pornit
+  off_label: Oprit
 field_type: boolean

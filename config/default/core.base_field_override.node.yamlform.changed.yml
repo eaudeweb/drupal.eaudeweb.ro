@@ -1,0 +1,18 @@
+uuid: e6864f06-fdb9-4d90-9d7f-f3e4fed852e5
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+id: node.yamlform.changed
+field_name: changed
+entity_type: node
+bundle: yamlform
+label: Schimbat
+description: 'Momentul în care nodul a fost editat ultima dată.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

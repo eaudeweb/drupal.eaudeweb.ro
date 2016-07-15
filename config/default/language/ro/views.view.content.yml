@@ -13,6 +13,7 @@ display:
       pager:
         options:
           tags:
+            previous: '‹ Anterior'
             next: 'Următor ›'
             first: '« Primul'
             last: 'Ultimul »'

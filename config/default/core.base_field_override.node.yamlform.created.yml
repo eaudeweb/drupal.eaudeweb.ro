@@ -1,0 +1,18 @@
+uuid: 8ff3033b-c302-41c0-ad0e-5017034481e7
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+id: node.yamlform.created
+field_name: created
+entity_type: node
+bundle: yamlform
+label: 'Creat la'
+description: 'Momentul în care nodul a fost creat.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

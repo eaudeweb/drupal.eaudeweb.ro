@@ -1,0 +1,18 @@
+uuid: aa3af396-4253-494b-812f-ded0d1b45d77
+langcode: ro
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: Homepage
+description: 'Adresa primei pagini a autorului comentariului.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

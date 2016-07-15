@@ -1,0 +1,18 @@
+uuid: 02599aaa-90a0-4cd9-a16d-cce3c95e8cbe
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.changed
+field_name: changed
+entity_type: node
+bundle: event
+label: Schimbat
+description: 'Momentul în care nodul a fost editat ultima dată.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

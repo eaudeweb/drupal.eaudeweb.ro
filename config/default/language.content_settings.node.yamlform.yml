@@ -1,0 +1,16 @@
+uuid: 1012c91e-090d-43fa-b4ac-ad99ecf7de98
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.yamlform
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.yamlform
+target_entity_type_id: node
+target_bundle: yamlform
+default_langcode: site_default
+language_alterable: false

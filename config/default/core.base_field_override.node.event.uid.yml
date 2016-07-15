@@ -1,0 +1,20 @@
+uuid: f8ca657d-c323-4505-9c68-044bb05b868a
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.event
+id: node.event.uid
+field_name: uid
+entity_type: node
+bundle: event
+label: 'Creat de'
+description: 'Numele de utilizator al autorului conținutului.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

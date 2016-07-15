@@ -1,0 +1,22 @@
+uuid: d493df9b-8bf8-4d23-a66e-90a3b33b305d
+langcode: ro
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.status
+field_name: status
+entity_type: comment
+bundle: comment
+label: 'Statusul publicării'
+description: 'Un boolean care indică dacă un comentariu este publicat.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Pornit
+  off_label: Oprit
+field_type: boolean

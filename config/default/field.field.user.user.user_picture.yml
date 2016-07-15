@@ -13,10 +13,10 @@ id: user.user.user_picture
 field_name: user_picture
 entity_type: user
 bundle: user
-label: Picture
-description: 'Your virtual face or picture.'
+label: Imagine
+description: 'Fața virtuală sau poza dumneavoastră.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
