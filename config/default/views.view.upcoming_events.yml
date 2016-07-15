@@ -212,19 +212,8 @@ display:
             group_items: {  }
           plugin_id: datetime
       sorts: {  }
-      title: 'Evenimente viitoare'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<h3 class="well-title">Upcoming events</h3>'
-          plugin_id: text_custom
+      title: 'Upcoming events'
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -253,10 +242,10 @@ display:
       display_extenders: {  }
       block_hide_empty: true
       display_description: 'Upcoming events block'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions

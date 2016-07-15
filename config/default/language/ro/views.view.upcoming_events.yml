@@ -1,0 +1,11 @@
+label: 'Evenimente viitoare'
+display:
+  default:
+    display_options:
+      header:
+        area_text_custom:
+          content: ''
+  block_1:
+    display_title: 'Evenimente viitoare'
+    display_options:
+      display_description: 'Evenimente viitoare'
