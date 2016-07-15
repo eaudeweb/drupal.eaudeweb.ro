@@ -121,7 +121,10 @@
 
 
                         {# Sidebar First #}
-                        {% if page.sidebar_first %}
+                        {% set temp %}
+                            {{ page.sidebar_first }}
+                        {% endset %}
+                        {% if temp|trim %}
                             {% block sidebar_first %}
                                 <aside class="col-sm-3" role="complementary">
                                     {{ page.sidebar_first }}
