@@ -4,10 +4,9 @@ status: true
 dependencies:
   config:
     - comment.type.comment
-    - field.field.comment.comment.comment_body
+    - field.field.comment.comment.field_abody
   module:
     - ds
-    - text
 third_party_settings:
   ds:
     layout:
@@ -31,7 +30,7 @@ third_party_settings:
     regions:
       ds_content:
         - comment_author
-        - comment_body
+        - field_abody
     fields:
       comment_author:
         plugin_id: comment_author
@@ -72,10 +71,9 @@ targetEntityType: comment
 bundle: comment
 mode: default
 content:
-  comment_body:
-    label: hidden
-    type: text_default
+  field_abody:
     weight: 1
+    label: hidden
     settings: {  }
     third_party_settings:
       ds:
@@ -106,6 +104,7 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
+    type: basic_string
 hidden:
   langcode: true
   links: true

@@ -1,6 +1,6 @@
 uuid: a0dbe602-9f5a-4688-8dae-652e688f754e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
 id: edw_breadcrumbs
 theme: edw
-region: highlighted
-weight: -3
+region: '-1'
+weight: -4
 provider: null
 plugin: system_breadcrumb_block
 settings:
