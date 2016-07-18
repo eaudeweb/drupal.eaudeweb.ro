@@ -1,5 +1,4 @@
 settings:
   default_form_submit_label: Trimite
   default_preview_next_button_label: Previzualizare
-  default_wizard_start_label: Start
   default_wizard_complete_label: Finalizat

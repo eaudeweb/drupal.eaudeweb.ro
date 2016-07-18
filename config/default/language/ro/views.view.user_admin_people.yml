@@ -10,7 +10,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -37,8 +36,6 @@ display:
           label: 'Ultima accesare'
         operations:
           label: Operaţii
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:
@@ -55,7 +52,6 @@ display:
             group_items:
               1:
                 title: Activ
-                value: '1'
               2:
                 title: Blocat
       title: Oameni

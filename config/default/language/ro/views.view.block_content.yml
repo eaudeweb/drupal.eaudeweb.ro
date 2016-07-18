@@ -10,7 +10,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -23,10 +22,8 @@ display:
       fields:
         info:
           label: 'Descrierea blocului'
-          separator: ', '
         type:
           label: 'Tipul blocului'
-          separator: ', '
         changed:
           label: Actualizat
         operations:

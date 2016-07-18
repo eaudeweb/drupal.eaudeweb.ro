@@ -9,7 +9,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -22,7 +21,6 @@ display:
           label: Titlu
         type:
           label: 'Tip conţinut'
-          separator: ', '
         name:
           label: Autor
         status:
@@ -40,7 +38,6 @@ display:
             group_items:
               1:
                 title: Publicat
-                value: '1'
               2:
                 title: Nepublicat
         type:
