@@ -11,7 +11,7 @@ dependencies:
 id: copyright
 theme: edw
 region: '-1'
-weight: -5
+weight: -8
 provider: null
 plugin: 'block_content:57a96d49-a8d6-4e28-99ce-8de70b62a746'
 settings:

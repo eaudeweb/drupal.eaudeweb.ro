@@ -11,7 +11,7 @@ dependencies:
 id: subtitle
 theme: edw
 region: header
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:b8153d7f-5c6d-49bb-afea-009d4f42fbdd'
 settings:

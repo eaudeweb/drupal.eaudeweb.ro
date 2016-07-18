@@ -1,17 +1,15 @@
-uuid: a0dbe602-9f5a-4688-8dae-652e688f754e
-langcode: en
-status: false
+uuid: 90b517d4-4573-43c8-90c2-8147d5193575
+langcode: ro
+status: true
 dependencies:
   module:
     - system
   theme:
     - edw
-_core:
-  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
-id: edw_breadcrumbs
+id: breadcrumbs
 theme: edw
-region: '-1'
-weight: -4
+region: highlighted
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:

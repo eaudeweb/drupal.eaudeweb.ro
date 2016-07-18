@@ -9,7 +9,7 @@ _core:
 id: edw_local_actions
 theme: edw
 region: highlighted
-weight: -6
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

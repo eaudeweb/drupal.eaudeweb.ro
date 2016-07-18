@@ -9,7 +9,7 @@ dependencies:
 id: languageswitcher
 theme: edw
 region: header
-weight: -7
+weight: -9
 provider: null
 plugin: 'language_block:language_interface'
 settings:
