@@ -15,7 +15,7 @@ entity_type: node
 bundle: article
 label: Comentarii
 description: ''
-required: true
+required: false
 translatable: false
 default_value:
   -
@@ -29,7 +29,7 @@ default_value_callback: ''
 settings:
   default_mode: 1
   per_page: 50
-  anonymous: 0
+  anonymous: 2
   form_location: true
   preview: 0
 field_type: comment

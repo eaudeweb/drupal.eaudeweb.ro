@@ -10,7 +10,7 @@ field_name: field_form_button_text
 entity_type: node
 bundle: event
 label: 'Form button text'
-description: 'Textul apare pe butonul care deschide forumlarul de inscriere'
+description: "Textul apare pe butonul care deschide forumlarul de inscriere.\r\nDaca este necompletat, butonul nu va fi afisat."
 required: false
 translatable: false
 default_value:

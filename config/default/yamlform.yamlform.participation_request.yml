@@ -5,7 +5,7 @@ dependencies: {  }
 id: participation_request
 title: 'Participation request'
 description: ''
-elements: "name:\n  '#title': Name\n  '#description': '  '\n  '#type': textfield\nemail:\n  '#title': Email\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#type': email\nmessage:\n  '#title': Message\n  '#description': '    '\n  '#default_value': 'I would like to participate!'\n  '#type': textarea\nevent:\n  '#value': '[current-page:title]'\n  '#type': value\n"
+elements: "name:\n  '#title': Name\n  '#description': '  '\n  '#type': textfield\nemail:\n  '#title': Email\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#type': email\nphone:\n  '#title': Phone\n  '#type': tel\nuniversity:\n  '#title': University\n  '#type': textfield\nevent:\n  '#value': '[current-page:title]'\n  '#type': value\n"
 settings:
   id: participation_request
   title: 'Participation request'
