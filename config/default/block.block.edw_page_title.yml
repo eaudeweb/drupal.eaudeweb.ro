@@ -8,8 +8,8 @@ _core:
   default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
 id: edw_page_title
 theme: edw
-region: header
-weight: -7
+region: highlighted
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

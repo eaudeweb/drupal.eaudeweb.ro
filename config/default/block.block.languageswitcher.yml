@@ -8,8 +8,8 @@ dependencies:
     - edw
 id: languageswitcher
 theme: edw
-region: navigation_collapsible
-weight: -6
+region: header
+weight: -7
 provider: null
 plugin: 'language_block:language_interface'
 settings:

@@ -1,0 +1,25 @@
+uuid: f7e7955a-0fba-4a70-9b37-a4539499bd23
+langcode: ro
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+  module:
+    - block_content
+  theme:
+    - edw
+id: subtitle
+theme: edw
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+settings:
+  id: 'block_content:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+  label: Subtitle
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

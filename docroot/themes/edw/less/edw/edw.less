@@ -354,7 +354,7 @@ h2{
   }
 }
 #block-languageswitcher{
-  float:right;
+  .pull-right;
   li{
     float:left;
   }
@@ -748,4 +748,32 @@ h2{
 .tag-link-group {
   padding-top:15px;
   padding-bottom:15px;
+}
+
+.well h2.block-title{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-top:5px;
+}
+.edw-top-bar section{
+  .make-sm-column(4);
+  .no-padding;
+}
+.edw-top-bar{
+  color:whitesmoke;
+  h2{
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+  .links{
+    margin-top:5px;
+    .pull-right;
+    a{
+      font-size:14px;
+    }
+    li a.is-active{
+      background-color: white !important;
+      color:@green;
+    }
+  }
 }
