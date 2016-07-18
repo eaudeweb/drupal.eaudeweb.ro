@@ -1,9 +1,9 @@
-uuid: f7e7955a-0fba-4a70-9b37-a4539499bd23
+uuid: ff1b3e9f-8be3-4513-b705-d497aab51c78
 langcode: ro
 status: true
 dependencies:
   content:
-    - 'block_content:basic:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+    - 'block_content:basic:b8153d7f-5c6d-49bb-afea-009d4f42fbdd'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: edw
 region: header
 weight: -9
 provider: null
-plugin: 'block_content:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+plugin: 'block_content:b8153d7f-5c6d-49bb-afea-009d4f42fbdd'
 settings:
-  id: 'block_content:97ba8279-1738-4c82-9efd-7b1dd3f034bb'
+  id: 'block_content:b8153d7f-5c6d-49bb-afea-009d4f42fbdd'
   label: Subtitle
   provider: block_content
   label_display: '0'
