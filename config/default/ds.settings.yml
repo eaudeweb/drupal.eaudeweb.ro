@@ -17,6 +17,8 @@ classes:
     - nopadding
     - panel
     - panel-default
+    - no-left-padding
+    - no-right-padding
   field: {  }
 use_field_names: true
 _core:

@@ -48,6 +48,7 @@ third_party_settings:
           left:
             layout-two-thirds: layout-two-thirds
             nopadding: nopadding
+            no-left-padding: no-left-padding
           right:
             layout-one-third: layout-one-third
             well: well
