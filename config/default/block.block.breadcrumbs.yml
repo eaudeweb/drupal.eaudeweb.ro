@@ -1,0 +1,20 @@
+uuid: 90b517d4-4573-43c8-90c2-8147d5193575
+langcode: ro
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - edw
+id: breadcrumbs
+theme: edw
+region: highlighted
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
