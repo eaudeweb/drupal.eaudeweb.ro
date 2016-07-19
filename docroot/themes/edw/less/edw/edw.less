@@ -7,12 +7,12 @@
 a {
   text-decoration: none;
   color: @green;
-  :visited, :focus{
+  :visited, :focus {
     color: @green;
     text-decoration: none;
   }
 
-  :hover{
+  :hover {
     color: @green-light;
     text-decoration: none;
   }
@@ -32,7 +32,6 @@ h2 {
   background-color: darken(@green, 10%);
   border-color: @green;
 }
-
 
 /* Region based */
 /****************/
@@ -305,7 +304,6 @@ body {
 .author {
 }
 
-
 /* Display suite */
 .no-left-padding {
   padding-left: 0 !important;
@@ -363,8 +361,6 @@ body {
   }
 }
 
-
-
 /* What are these??? */
 /*********************/
 .fullwidth-iframe-container {
@@ -377,7 +373,6 @@ body {
   .panel;
   .panel-default;
 }
-
 
 /* Custom classes used from field formatting */
 /*********************************************/
@@ -425,7 +420,6 @@ body {
   padding-bottom: 15px;
 }
 
-
 #block-languageswitcher {
   .pull-right;
   li {
@@ -442,7 +436,6 @@ body {
     background-color: @green;
   }
 }
-
 
 .comment-form {
   .filter-help a {
@@ -463,4 +456,34 @@ body {
 
 .participate-button {
   margin-bottom: 5px;
+}
+
+// Frontpage view
+.frontpage-article-title {
+  h2 {
+    margin-top: 0px;
+  }
+}
+
+.clear-after {
+  &:after {
+  }
+}
+
+.view-frontpage {
+  .views-row {
+    clear: both;
+    .views-field-uid {
+      padding-right: 5px;
+    }
+    .views-field-body {
+      clear: both;
+
+      margin-bottom: 30px;
+    }
+    .views-field-user-picture img{
+      border-radius: 50px;
+      height: inherit;
+    }
+  }
 }

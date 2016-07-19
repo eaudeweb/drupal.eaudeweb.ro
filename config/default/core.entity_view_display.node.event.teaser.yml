@@ -61,8 +61,6 @@ third_party_settings:
         - field_start_date
         - body
         - field_tags
-      footer:
-        - links
     fields:
       node_title:
         plugin_id: node_title
@@ -206,10 +204,6 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-  links:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   comment: true
   field_description: true
@@ -219,4 +213,5 @@ hidden:
   field_google_location_string: true
   field_location: true
   langcode: true
+  links: true
   yamlform: true

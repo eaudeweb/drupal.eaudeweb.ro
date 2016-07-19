@@ -1,0 +1,14 @@
+uuid: 7e6d9676-34df-4ca8-a4a5-6c4deb5ea724
+langcode: ro
+status: true
+dependencies: {  }
+name: front
+label: 'Frontpage '
+effects:
+  adcfbb18-98c5-49fe-a8b5-81eb642482d5:
+    uuid: adcfbb18-98c5-49fe-a8b5-81eb642482d5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50

@@ -4,7 +4,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: 'public://favicon.ico'
-  url: 'http://drupaledw.localhost/sites/default/files/favicon.ico'
+  url: 'http://drupaledw.localhost/themes/edw/favicon.ico'
   use_default: false
 schema: '8000'
 logo:
@@ -19,8 +19,8 @@ region_wells:
   highlighted: ''
   help: ''
   content: ''
-  sidebar_first: well
-  sidebar_second: ''
+  sidebar_first: ''
+  sidebar_second: well
   footer: ''
 features:
   comment_user_picture: true
