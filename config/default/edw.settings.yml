@@ -3,9 +3,9 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://edwdev.localhost/themes/edw/favicon.ico'
-  use_default: true
+  path: 'public://favicon.ico'
+  url: 'http://drupaledw.localhost/sites/default/files/favicon.ico'
+  use_default: false
 schema: '8000'
 logo:
   path: themes/edw/images/logo.png
