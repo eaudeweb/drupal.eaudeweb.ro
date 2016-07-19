@@ -7,12 +7,12 @@
 a {
   text-decoration: none;
   color: @green;
-  :visited, :focus {
+  &:visited, &:focus {
     color: @green;
     text-decoration: none;
   }
 
-  :hover {
+  &:hover {
     color: @green-light;
     text-decoration: none;
   }
@@ -340,9 +340,12 @@ body {
 }
 
 // block-title from formatting
+.region.well{
+    padding-top:0;
+}
 .well h2.block-title {
   border-bottom: 1px solid #ddd;
-  margin: -19px;
+  margin:0 -19px 0;
   margin-bottom: 0px;
   background-color: @green;
   padding: 10px 19px 10px;
@@ -472,6 +475,9 @@ body {
 
 .view-frontpage {
   .views-row {
+    h2{
+      font-size:22px;
+    }
     clear: both;
     .views-field-uid {
       padding-right: 5px;
