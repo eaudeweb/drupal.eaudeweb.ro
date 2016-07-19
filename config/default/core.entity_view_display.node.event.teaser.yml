@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_facebook_share
     - field.field.node.event.field_form_button_text
     - field.field.node.event.field_google_location_string
     - field.field.node.event.field_image
@@ -213,6 +214,7 @@ hidden:
   comment: true
   field_description: true
   field_end_date: true
+  field_facebook_share: true
   field_form_button_text: true
   field_google_location_string: true
   field_location: true

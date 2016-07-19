@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.comment
     - field.field.node.event.field_description
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_facebook_share
     - field.field.node.event.field_form_button_text
     - field.field.node.event.field_google_location_string
     - field.field.node.event.field_image
@@ -58,6 +59,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_facebook_share:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
   field_form_button_text:
     weight: 15
     settings:
@@ -128,6 +136,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
   uid:
     type: entity_reference_autocomplete
     weight: 1

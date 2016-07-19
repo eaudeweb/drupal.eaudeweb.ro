@@ -1,0 +1,24 @@
+uuid: ca8a9211-862c-4765-b5ca-ec2f15e81ae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook_share
+    - node.type.event
+  module:
+    - text
+id: node.event.field_facebook_share
+field_name: field_facebook_share
+entity_type: node
+bundle: event
+label: 'Facebook share'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div id=\"fb-root\">&nbsp;</div>\r\n\r\n\r\n<div class=\"fb-share-button\" data-href=\"[site:url]\" data-layout=\"button_count\" data-mobile-iframe=\"true\"><a class=\"fb-xfbml-parse-ignore\" href=\"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftest%2F&amp;src=sdkpreparse\" target=\"_blank\">Share</a></div>\r\n<script>(function(d, s, id) {\r\n var url = window.location.href;\r\n buttons = document.getElementsByClassName(\"fb-share-button\");\r\n if (buttons[0]) {\r\n   buttons[0].dataset.href=url;\r\n }\r\n\r\n\r\n var js, fjs = d.getElementsByTagName(s)[0];\r\n if (d.getElementById(id)) return;\r\n js = d.createElement(s); js.id = id;\r\n js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7\";\r\n fjs.parentNode.insertBefore(js, fjs);\r\n}(document, 'script', 'facebook-jssdk'));</script>"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long
