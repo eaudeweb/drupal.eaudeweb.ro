@@ -127,7 +127,7 @@ content:
             lbw-at: ''
             ow: true
             ow-el: button
-            ow-cl: 'btn btn-primary btn-block participate-button'
+            ow-cl: 'btn btn-primary btn-block  participate-button'
             ow-at: 'data-target="#myModal" data-toggle="modal" type="button"'
             fis-el: ''
             fis-cl: ''

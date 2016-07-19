@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 formId: yamlform_submission_participation_request_form
-captchaType: recaptcha/reCAPTCHA
+captchaType: captcha/Math
 label: yamlform_submission_participation_request_form

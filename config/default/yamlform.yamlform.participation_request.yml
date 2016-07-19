@@ -5,7 +5,7 @@ dependencies: {  }
 id: participation_request
 title: 'Participation request'
 description: ''
-elements: "email:\n  '#title': Email\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#type': email\nname:\n  '#title': Name\n  '#description': '  '\n  '#required': true\n  '#type': textfield\nphone:\n  '#title': Phone\n  '#input_mask': '(999) 999-9999'\n  '#type': textfield\nuniversity:\n  '#title': University\n  '#title_display': before\n  '#type': textfield\nevent:\n  '#value': '[current-page:title]'\n  '#type': value\n"
+elements: "name:\n  '#title': Name\n  '#required': true\n  '#type': textfield\nemail:\n  '#title': Email\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#type': email\nphone:\n  '#title': Phone\n  '#type': textfield\nuniversity:\n  '#title': University\n  '#title_display': before\n  '#type': textfield\nevent:\n  '#value': '[current-page:title]'\n  '#type': value\n"
 settings:
   id: participation_request
   title: 'Participation request'
@@ -51,6 +51,7 @@ access:
     roles:
       - anonymous
       - authenticated
+      - administrator
     users: {  }
   view_any:
     roles: {  }
