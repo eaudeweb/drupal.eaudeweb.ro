@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
     - node.type.article
-    - node.type.event
   module:
     - node
     - user
@@ -175,7 +174,6 @@ display:
           operator: in
           value:
             article: article
-            event: event
           group: 1
           exposed: false
           expose:
@@ -328,6 +326,7 @@ display:
           relationship: none
           view_mode: rss
       display_extenders: {  }
+      enabled: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
