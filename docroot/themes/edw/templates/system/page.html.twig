@@ -120,26 +120,23 @@
                     <div class="row">
 
 
-                        {# Sidebar First #}
+                        {# Sidebar First size calculation #}
                         {% set temp %}
                             {{ page.sidebar_first }}
                         {% endset %}
                         {% set sidebar_first_exists = temp|trim %}
-                        {% if sidebar_first_exists %}
-                            {% block sidebar_first %}
-                                <aside class="col-sm-3" role="complementary">
-                                    {{ page.sidebar_first }}
-                                </aside>
-                            {% endblock %}
-                        {% endif %}
+
+
+
 
                         {# Content #}
-                        {% set content_classes = [
-                        sidebar_first_exists and page.sidebar_second ? 'col-sm-6',
-                        sidebar_first_exists and page.sidebar_second is empty ? 'col-sm-9',
-                        page.sidebar_second and sidebar_first_exists is empty ? 'col-sm-9',
-                        sidebar_first_exists is empty and page.sidebar_second is empty ? 'col-sm-12'
-                        ] %}
+                        {% set content_cols = sidebar_first_exists and page.sidebar_second ? '6':
+                        sidebar_first_exists and page.sidebar_second is empty ? '9':
+                        page.sidebar_second and sidebar_first_exists is empty ? '9':
+                        sidebar_first_exists is empty and page.sidebar_second is empty ? '12' %}
+
+                        {% set content_classes = ['col-sm-' ~ content_cols ,
+                        sidebar_first_exists ? 'col-sm-push-3'] %}
                         <section{{ content_attributes.addClass(content_classes) }}>
 
                             {# Highlighted #}
@@ -176,7 +173,16 @@
                                 {{ page.content }}
                             {% endblock %}
                         </section>
+                        {# Sidebar First #}
 
+                        {% if sidebar_first_exists %}
+                            {% block sidebar_first %}
+                                {% set pull_class = 'col-sm-pull-' ~ content_cols %}
+                                <aside class="col-sm-3 {{ pull_class }}" role="complementary">
+                                    {{ page.sidebar_first }}
+                                </aside>
+                            {% endblock %}
+                        {% endif %}
                         {# Sidebar Second #}
                         {% if page.sidebar_second %}
                             {% block sidebar_second %}
