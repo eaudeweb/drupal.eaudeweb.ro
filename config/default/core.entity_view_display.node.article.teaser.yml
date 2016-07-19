@@ -34,9 +34,7 @@ third_party_settings:
         link_attribute: content
         link_custom: ''
         classes:
-          layout_class:
-            well: well
-            hover-effect: hover-effect
+          layout_class: {  }
           header: {  }
           left:
             layout-one-third: layout-one-third
@@ -50,8 +48,6 @@ third_party_settings:
       right:
         - node_title
         - body
-      footer:
-        - links
     fields:
       node_title:
         plugin_id: node_title
@@ -104,11 +100,8 @@ content:
             lb-col: false
             classes: {  }
     label: hidden
-  links:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   comment: true
   field_tags: true
   langcode: true
+  links: true
