@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: projects
-label: Projects
+label: Portfolio
 module: views
 description: ''
 tag: ''
@@ -229,7 +229,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Portofolio
+      title: Portfolio
       header: {  }
       footer: {  }
       empty: {  }
@@ -252,10 +252,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: portofolio
+      path: portfolio
       menu:
         type: normal
-        title: Portofolio
+        title: Portfolio
         description: ''
         expanded: false
         parent: ''
