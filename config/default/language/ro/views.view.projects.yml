@@ -1,1 +1,9 @@
 label: Portofoliu
+display:
+  default:
+    display_options:
+      title: Portofoliu
+  page_1:
+    display_options:
+      menu:
+        title: Portofoliu

@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: projects
-label: Portfolio
+label: Projects
 module: views
 description: ''
 tag: ''
@@ -252,7 +252,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: portfolio
+      path: portofoliu
       menu:
         type: normal
         title: Portfolio

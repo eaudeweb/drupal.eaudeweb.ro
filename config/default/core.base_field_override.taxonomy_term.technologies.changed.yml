@@ -1,0 +1,18 @@
+uuid: c815d7aa-814e-44c3-b713-ea994622dd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technologies
+id: taxonomy_term.technologies.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: technologies
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
