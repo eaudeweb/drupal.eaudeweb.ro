@@ -12,9 +12,8 @@ dependencies:
     - field.field.node.project.field_technologies
     - node.type.project
   module:
-    - datetime
-    - image
-    - link
+    - ds
+    - slick
     - text
     - user
 id: node.project.default
@@ -25,59 +24,96 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   field_client:
-    weight: 103
-    label: above
+    weight: 1
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  field_end_date:
-    weight: 107
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
   field_images:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
+      optionset: default
+      optionset_thumbnail: default
+      skin: default
+      skin_thumbnail: ''
       image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-  field_link:
-    weight: 105
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-  field_start_date:
-    weight: 106
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
+      thumbnail_style: ''
+      thumbnail_effect: grid
+      media_switch: ''
+      ratio: ''
+      layout: ''
+      thumbnail_caption: ''
+      cache: -1
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        sm:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        md:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        lg:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        xl:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      responsive_image_style: ''
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      display: main
+      item_id: ''
+      box_style: ''
+      icon: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: slick_image
   field_technologies:
-    weight: 104
+    weight: 3
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  links:
-    weight: 100
 hidden:
+  field_end_date: true
+  field_link: true
+  field_start_date: true
   langcode: true
+  links: true
