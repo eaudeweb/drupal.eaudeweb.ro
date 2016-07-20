@@ -342,12 +342,13 @@ body {
 }
 
 // block-title from formatting
-.region.well{
-    padding-top:0;
+.region.well {
+  padding-top: 0;
 }
+
 .well h2.block-title {
   border-bottom: 1px solid #ddd;
-  margin:0 -19px 0;
+  margin: 0 -19px 0;
   margin-bottom: 0px;
   background-color: @green;
   padding: 10px 19px 10px;
@@ -463,22 +464,33 @@ body {
   margin-bottom: 5px;
 }
 
-// Frontpage view
-.frontpage-article-title {
-  h2 {
-    margin-top: 0px;
+.clear-after {
+  &::after {
+    clear: both;
+    content: ' ';
   }
 }
 
-.clear-after {
-  &:after {
+.clear-before {
+  &::before {
+    clear: both;
+    content: ' ';
+  }
+}
+
+// Frontpage view
+.frontpage-article-title {
+  .clear-before;
+  h2 {
+    margin-top: 10px;
+    clear: both;
   }
 }
 
 .view-frontpage {
   .views-row {
-    h2{
-      font-size:22px;
+    h2 {
+      font-size: 22px;
     }
     clear: both;
     .views-field-uid {
@@ -489,7 +501,7 @@ body {
 
       margin-bottom: 30px;
     }
-    .views-field-user-picture img{
+    .views-field-user-picture img {
       border-radius: 50px;
       height: inherit;
     }
@@ -497,30 +509,39 @@ body {
 }
 
 // Right Well Blocks Separator
-.well.region-sidebar-second{
-  .block{
+.well.region-sidebar-second {
+  .block {
 
   }
 }
-.portofolio-project-rectangle{
+
+.portofolio-project-rectangle {
   border: 0px solid #ddd;
-  h2{
+  h2 {
     //margin-top:0;
   }
-  margin-bottom:20px;
+  margin-bottom: 20px;
 
 }
-.project-technologies{
 
-  li{
-    span{
-      color:black;
+.project-technologies {
+
+  li {
+    span {
+      color: black;
     }
     list-style: none;
 
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size:17px;
-    a{color:black;
+    font-size: 17px;
+    a {
+      color: black;
     }
+  }
+}
+
+.views-field-created {
+  &:after {
+    clear: both;
   }
 }
