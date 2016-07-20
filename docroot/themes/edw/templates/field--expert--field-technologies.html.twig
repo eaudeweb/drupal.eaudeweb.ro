@@ -39,7 +39,7 @@ label_display == 'inline' ? 'inline',
     {% if not label_hidden %}
         <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
     {% endif %}
-    <ul class="project-technologies list-inline">
+    <ul class="project-technologies">
         {% for item in items %}
             <li{{ item.attributes }}> <span class="glyphicon glyphicon-ok-circle"></span> {{ item.content }}</li>
         {% endfor %}

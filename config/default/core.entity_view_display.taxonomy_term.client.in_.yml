@@ -39,7 +39,7 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          wrapper: div
+          wrapper: h3
           class: client-in-project-title
           link: false
         ft:
