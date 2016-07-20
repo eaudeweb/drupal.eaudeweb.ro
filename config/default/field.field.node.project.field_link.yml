@@ -6,7 +6,11 @@ dependencies:
     - field.storage.node.field_link
     - node.type.project
   module:
+    - field_display_label
     - link
+third_party_settings:
+  field_display_label:
+    display_label: 'You can see this on'
 id: node.project.field_link
 field_name: field_link
 entity_type: node

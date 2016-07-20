@@ -13,6 +13,7 @@ dependencies:
     - node.type.project
   module:
     - ds
+    - link
     - slick
     - text
     - user
@@ -104,6 +105,45 @@ content:
             lb-col: false
             classes: {  }
     type: slick_image
+  field_link:
+    type: link
+    weight: 4
+    label: inline
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: '<div class="btn btn-primary btn-block">'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: '</div>'
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
   field_technologies:
     weight: 3
     label: above
@@ -113,7 +153,6 @@ content:
     type: entity_reference_label
 hidden:
   field_end_date: true
-  field_link: true
   field_start_date: true
   langcode: true
   links: true
