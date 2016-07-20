@@ -1,0 +1,18 @@
+uuid: f38b5843-28e1-4ca3-9e14-7c169a346b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.client
+id: taxonomy_term.client.name
+field_name: name
+entity_type: taxonomy_term
+bundle: client
+label: Name
+description: 'The term name.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
