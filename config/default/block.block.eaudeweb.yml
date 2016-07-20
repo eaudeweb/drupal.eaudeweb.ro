@@ -1,9 +1,9 @@
-uuid: 8ee2cc15-236e-48b3-adab-873df176692a
+uuid: 8b2909ed-7b70-4bcd-8630-78689d5d17df
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+    - 'block_content:basic:4b51e758-185a-4505-bdc4-8b4f0437a268'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: edw
 region: sidebar_second
 weight: -10
 provider: null
-plugin: 'block_content:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+plugin: 'block_content:4b51e758-185a-4505-bdc4-8b4f0437a268'
 settings:
-  id: 'block_content:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+  id: 'block_content:4b51e758-185a-4505-bdc4-8b4f0437a268'
   label: 'Eau de web'
   provider: block_content
   label_display: '0'
