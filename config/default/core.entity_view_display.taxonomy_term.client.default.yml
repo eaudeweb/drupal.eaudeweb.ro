@@ -1,0 +1,31 @@
+uuid: 9deec50b-9cd8-4ee8-b09d-fe31531a8a77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.client.field_logo
+    - taxonomy.vocabulary.client
+  module:
+    - image
+    - text
+id: taxonomy_term.client.default
+targetEntityType: taxonomy_term
+bundle: client
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_logo:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  langcode: true

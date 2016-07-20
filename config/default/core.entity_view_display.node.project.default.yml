@@ -17,6 +17,31 @@ dependencies:
     - slick
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_images
+        - body
+        - field_client
+        - field_technologies
+        - field_link
 id: node.project.default
 targetEntityType: node
 bundle: project
@@ -25,16 +50,45 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_client:
-    weight: 1
-    label: inline
+    weight: 2
+    label: above
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: in_
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: big-label
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: entity_reference_entity_view
   field_images:
     weight: 0
     label: hidden
@@ -108,22 +162,37 @@ content:
   field_link:
     type: link
     weight: 4
-    label: inline
+    label: hidden
     settings:
       trim_length: 80
+      url_only: true
+      url_plain: true
       target: _blank
-      url_only: false
-      url_plain: false
       rel: '0'
     third_party_settings:
       ds:
         ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_technologies:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
           id: expert
           settings:
             lb: ''
-            prefix: '<div class="btn btn-primary btn-block">'
-            lbw-el: ''
-            lbw-cl: ''
+            prefix: ''
+            lbw: true
+            lbw-el: div
+            lbw-cl: biglabel
             lbw-at: ''
             ow-el: ''
             ow-cl: ''
@@ -134,8 +203,7 @@ content:
             fi-el: ''
             fi-cl: ''
             fi-at: ''
-            suffix: '</div>'
-            lbw: false
+            suffix: ''
             lb-col: false
             ow: false
             ow-def-at: false
@@ -144,12 +212,6 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
-  field_technologies:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
     type: entity_reference_label
 hidden:
   field_end_date: true

@@ -1,0 +1,73 @@
+uuid: 53ec2a8a-fb90-4f00-8f5b-71b59b952fe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.in_
+    - field.field.taxonomy_term.client.field_logo
+    - image.style.medium
+    - taxonomy.vocabulary.client
+  module:
+    - ds
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - taxonomy_term_title
+        - field_logo
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: div
+          class: client-in-project-title
+          link: false
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: taxonomy_term.client.in_
+targetEntityType: taxonomy_term
+bundle: client
+mode: in_
+content:
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+hidden:
+  description: true
+  langcode: true

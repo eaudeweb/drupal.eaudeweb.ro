@@ -1,0 +1,10 @@
+uuid: 871979db-e9d4-4295-aa1d-1fe49b5c6504
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.in_
+label: 'In project'
+targetEntityType: taxonomy_term
+cache: true
