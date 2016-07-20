@@ -1,16 +1,17 @@
-uuid: fe74cd57-949d-4b11-9d58-813860c6002b
+uuid: c49c75a4-35b8-4177-bb20-3856187a26b9
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_facebook_share
-field_name: field_facebook_share
+    - taxonomy
+id: node.field_client
+field_name: field_client
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

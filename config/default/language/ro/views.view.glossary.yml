@@ -10,12 +10,16 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
+          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         title:
           label: Titlu

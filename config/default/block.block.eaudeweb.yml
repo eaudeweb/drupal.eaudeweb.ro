@@ -1,0 +1,25 @@
+uuid: 8ee2cc15-236e-48b3-adab-873df176692a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+  module:
+    - block_content
+  theme:
+    - edw
+id: eaudeweb
+theme: edw
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+settings:
+  id: 'block_content:21f615bd-cf58-4cc7-a8b0-3112f05ee2f9'
+  label: 'Eau de web'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

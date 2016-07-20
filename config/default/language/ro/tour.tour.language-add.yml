@@ -1,10 +1,10 @@
-label: 'Adăugare limbi'
+label: 'Adding languages'
 tips:
   language-add-overview:
-    label: 'Adăugare limbi'
-    body: '<p>Această pagină oferă posibilitatea de a adăuga limbi comune sitului dumneavoastră.</p><p>Dacă limba dorită nu este disponibilă, puteți adăuga o limbă personalizată.</p>'
+    label: 'Adding languages'
+    body: '<p>This page provides the ability to add common languages to your site.</p><p>If the desired language is not available, you can add a custom language.</p>'
   language-add-choose:
-    label: 'Selectaţi limba'
-    body: '<p>Alegeți o limbă din listă, sau alegeți "Limbă personalizată ..." de la sfârșitul listei.</p><p>Faceți clic pe butonul "Adaugă o limbă", atunci când ați terminat alegerea limbii.</p><p>Când adăugați o limbă personalizată, veți primi un formular suplimentar în care se pot furniza: numele, codul și direcția limbii.</p>'
+    label: 'Select language'
+    body: '<p>Choose a language from the list, or choose "Custom language..." at the end of the list.</p><p>Click the "Add language" button when you are done choosing your language.</p><p>When adding a custom language, you will get an additional form where you can provide the name, code, and direction of the language.</p>'
   language-add-continue:
-    label: 'Continuarea pe'
+    label: 'Continuing on'

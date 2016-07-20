@@ -1,17 +1,17 @@
-label: 'Editarea limbilor'
+label: 'Editing languages'
 tips:
   language-edit-overview:
-    label: 'Editarea limbilor'
-    body: '<p>Această pagină oferă posibilitatea de a edita o limbă pe situl dumneavoastră, inclusiv limbile personalizate.</p>'
+    label: 'Editing languages'
+    body: '<p>This page provides the ability to edit a language on your site, including custom languages.</p>'
   language-edit-langcode:
-    label: 'Codul limbii'
-    body: '<p>Nu puteți schimba codul unei limbi pe site, cât acesta este folosit în sistemul de urmărire a limbii.</p>'
+    label: 'Language code'
+    body: '<p>You cannot change the code of a language on the site, since it is used by the system to keep track of the language.</p>'
   language-edit-label:
-    label: 'Numele limbii'
-    body: '<p>Numele limbii este folosit peste tot în sit pentru toți utilizatorii și este scris în limba engleză. Numele limbilor de bază poate fi tradus cu ajutorul modulului Traducerea Interfeței, și numele atât cele de bază cât si cele personalizate poate fi tradus cu ajutorul modulului Configurarea traducerii.</p>'
+    label: 'Language name'
+    body: '<p>The language name is used throughout the site for all users and is written in English. Names of built-in languages can be translated using the Interface Translation module, and names of both built-in and custom languages can be translated using the Configuration Translation module.</p>'
   language-edit-direction:
-    label: 'Direcția limbii'
-    body: '<p>Alegeți dacă limba este o limbă "de la stânga la dreapta" sau "de la dreapta la stânga".</p><p>Rețineți că nu toate temele suportă formatul "de la dreapta la stânga", prin urmare  testați-vă tema dacă utilizați formatul "de la dreapta la stânga".</p>'
+    label: 'Language direction'
+    body: '<p>Choose if the language is a "Left to right" or "Right to left" language.</p><p>Note that not all themes support "Right to left" layouts, so test your theme if you are using "Right to left".</p>'
   language-edit-continue:
-    label: 'Continuarea pe'
-    body: '<p>Acum, că aveți o privire de ansamblu asupra caracteristicii "Editează limba", puteți continua cu:<ul><li>Editarea unei limbi </li><li><a href="[site:url]/admin/config/regional/language"> Vizualizarea limbilor configurate</a></li></ul></p>'
+    label: 'Continuing on'
+    body: '<p>Now that you have an overview of the "Edit language" feature, you can continue by:<ul><li>Editing a language</li><li><a href="[site:url]/admin/config/regional/language">Viewing configured languages</a></li></ul></p>'

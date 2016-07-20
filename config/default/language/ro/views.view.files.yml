@@ -10,6 +10,7 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -20,8 +21,11 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        fid:
+          label: Fid
         filename:
           label: Nume
+          separator: ', '
         filemime:
           label: 'Tip MIME'
         filesize:
@@ -75,6 +79,7 @@ display:
           label: 'Înregistrare modul'
         count:
           label: 'Număr de utilizări'
+          format_plural_string: "1\x03@count"
       title: 'Întrebuințarea fișierului'
       arguments:
         fid:

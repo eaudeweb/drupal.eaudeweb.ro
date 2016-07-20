@@ -1,0 +1,9 @@
+uuid: f8bf406e-7754-4a22-9893-e9234ebbe1a8
+langcode: zxx
+status: true
+dependencies: {  }
+name: Client
+vid: client
+description: ''
+hierarchy: 0
+weight: 0

@@ -14,11 +14,12 @@ classes:
     - row
     - hover-effect
     - mini-teaser-bottom-border
-    - nopadding
+    - no-padding
     - panel
     - panel-default
     - no-left-padding
     - no-right-padding
+    - portofolio-project-rectangle
   field: {  }
 use_field_names: true
 _core:

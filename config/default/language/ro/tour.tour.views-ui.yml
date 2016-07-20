@@ -1,32 +1,32 @@
-label: 'Pagina de editare a vizualizării'
+label: 'View edit page'
 tips:
   views-main:
-    label: 'Administrarea setărilor view-ului'
-    body: 'Vizualizează sau editează configurația.'
+    label: 'Manage view settings'
+    body: 'View or edit the configuration.'
   views-ui-displays:
-    label: 'Modurile de afișare pentru acest views'
-    body: 'O afișare este un mod de expunere a rezultatelor, ex., ca o pagină sau un bloc. Un view poate conține mai multe afișări, care sunt listate aici. Afișarea activă este evidențiată.'
+    label: 'Displays in this view'
+    body: 'A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.'
   views-ui-view-admin:
-    label: 'Administrare view'
-    body: 'Efectuează sarcini administrative, inclusiv adăugarea unei descrieri și crearea unei clone. Faceți clic pe butonul drop-down pentru a vizualiza opțiunile disponibile.'
+    label: 'View administration'
+    body: 'Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.'
   views-ui-format:
-    label: 'Formatul de ieşire'
-    body: 'Alegeți modul de afișare al rezultatelor. De exemplu, alege <em>Content</em> pentru a afișa fiecare element complet, folosind setările de afișare configurate. Sau alegeți <em>Fields</em>, care vă permite să afișați numai câmpurile specificate pentru fiecare rezultat. Pot fi adăugate formate adiționale prin instalarea de module pentru a <em>extinde</em> funcționalitatea de bază a Drupalului.'
+    label: 'Output format'
+    body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
   views-ui-fields:
-    label: Câmpuri
-    body: 'Dacă acest view utilizează câmpuri, acestea sunt enumerate aici. Puteți face clic pe un câmp pentru a-l configura.'
+    label: Fields
+    body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
   views-ui-filter:
-    label: 'Filtrează vizualizarea'
-    body: 'Adaugă filtre pentru a limita rezultatele la afișare. De exemplu, pentru a arăta doar conținutul, care este <em>publicat</em>, trebuie să adăugați un filtru pentru <em>Publicat</em> și să selectați <em>Da</em>.'
+    label: 'Filter your view'
+    body: 'Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.'
   views-ui-filter-operations:
-    label: 'Acțiuni de filtrare'
-    body: 'Adaugă, rearanjează sau elimină filtre.'
+    label: 'Filter actions'
+    body: 'Add, rearrange or remove filters.'
   views-ui-sorts:
-    label: 'Criterii de sortare'
-    body: 'Controlează ordinea în care rezultatele sunt afișate. Faceți clic pe o regulă de sortare activă pentru a o configura.'
+    label: 'Sort Criteria'
+    body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
   views-ui-sorts-operations:
-    label: 'Acțiuni de sortare'
-    body: 'Adaugă, rearanjează sau elimină regulile de sortare.'
+    label: 'Sort actions'
+    body: 'Add, rearrange or remove sorting rules.'
   views-ui-preview:
     label: Previzualizare
-    body: 'Arată o previzualizare a ieșirii view-ului.'
+    body: 'Show a preview of the view output.'

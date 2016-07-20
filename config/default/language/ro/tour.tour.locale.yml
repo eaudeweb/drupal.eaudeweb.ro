@@ -1,26 +1,26 @@
-label: Traducere
+label: Translation
 tips:
   locale-overview:
-    label: 'Traducerea interfeței utilizatorului'
-    body: 'Această pagină vă permite să traduceți interfața utilizatorului sau să modificați traduceri existente. Dacă ați instalat situl inițial în limba engleză, trebuie să adăugați, mai întâi, o altă limbă pe <a href="[site:url]/admin/config/regional/language">pagina de configurare a Limbilor</a>, în scopul de a utiliza acestă pagină.'
+    label: 'User interface translation'
+    body: 'This page allows you to translate the user interface or modify existing translations. If you have installed your site initially in English, you must first add another language on the <a href="[site:url]/admin/config/regional/language">Languages page</a>, in order to use this page.'
   locale-language:
-    label: 'Limba de traducere'
-    body: 'Alegeți limba în care doriți să traduceți.'
+    label: 'Translation language'
+    body: 'Choose the language you want to translate.'
   locale-search:
-    label: Căutare
-    body: 'Introduceți cuvântul sau propoziția pe care doriți să o traduceți, puteți scrie, de asemenea, doar o parte dintr-un cuvânt.'
+    label: Search
+    body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
   locale-filter:
-    label: 'Filtrează căutarea'
-    body: 'Puteți căuta după șiruri netraduse dacă doriți să traduceți ceva care nu este tradus încă. Dacă doriți să modificați o traducere existentă, s-ar putea să doriți să căutați doar după siruri traduse.'
+    label: 'Filter the search'
+    body: 'You can search for untranslated strings if you want to translate something that isn''t translated yet. If you want to modify an existing translation, you might want to search only for translated strings.'
   locale-submit:
-    label: 'Aplicați criteriile dumneavoastră de căutare'
-    body: 'Pentru a aplica criteriile de căutare, faceți clic pe butonul <em>Filtru</em>.'
+    label: 'Apply your search criteria'
+    body: 'To apply your search criteria, click on the <em>Filter</em> button.'
   locale-translate:
-    label: Traduce
-    body: 'Puteți scrie propria dumneavoastră traducere în câmpurile text ale coloanei din dreapta. Încercați să vă dați seama în ce context va fi utilizat textul în scopul de a fi tradus în mod adecvat.'
+    label: Translate
+    body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'
   locale-validate:
-    label: 'Validați traducerea'
-    body: 'După ce ați terminat traducerile, faceți clic pe butonul <em>Salvează traducerile</em>. Trebuie să salvați traducerile de fiecare dată înainte de a schimba pagina sau de a face o căutare nouă.'
+    label: 'Validate the translation'
+    body: 'When you have finished your translations, click on the <em>Save translations</em> button. You must save your translations, each time before changing the page or making a new search.'
   locale-continue:
-    label: 'Continuarea pe'
-    body: 'Traducerile pe care le-ați făcut aici vor fi folosite pe interfața sitului dumneavoastră. Dacă doriți să le utilizați pe un alt sit sau să le modificați pe un editor de traducere externă, puteți <a href="[site:url]/admin/config/regional/translate/export">să le exportați</a> într-un fișier cu extensia .po și <a href="[site:url]/admin/config/regional/translate/import">să le importați</a> mai târziu.'
+    label: 'Continuing on'
+    body: 'The translations you have made here will be used on your site''s user interface. If you want to use them on another site or modify them on an external translation editor, you can <a href="[site:url]/admin/config/regional/translate/export">export them</a> to a .po file and <a href="[site:url]/admin/config/regional/translate/import">import them</a> later.'

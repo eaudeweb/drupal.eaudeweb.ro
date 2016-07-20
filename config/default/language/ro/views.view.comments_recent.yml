@@ -1,15 +1,15 @@
-label: 'Comentarii recente'
-description: 'Comentarii recente.'
+label: 'Recent comments'
+description: 'Recent comments.'
 display:
   default:
     display_title: Expert
     display_options:
-      title: 'Comentarii recente'
+      title: 'Recent comments'
       empty:
         area_text_custom:
-          content: 'Nu sunt comentarii disponibile.'
+          content: 'No comments available.'
   block_1:
     display_title: Bloc
     display_options:
-      block_description: 'Comentarii recente'
-      block_category: 'Liste (Vizualizări)'
+      block_description: 'Recent comments'
+      block_category: 'Lists (Views)'

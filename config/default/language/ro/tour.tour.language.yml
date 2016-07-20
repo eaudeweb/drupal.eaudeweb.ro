@@ -1,20 +1,20 @@
 label: Limba
 tips:
   language-overview:
-    label: Limbi
-    body: '<p>Pagina "Limbi" vă permite să adăugați, să editați, să ștergeți, și să reordonați limbile pentru sit.</p>'
+    label: Languages
+    body: '<p>The "Languages" page allows you to add, edit, delete, and reorder languages for the site.</p>'
   language-add:
-    label: 'Adăugare limbi'
-    body: '<p>Pentru a adăuga mai multe limbi pe situl dumneavoastră, faceți clic pe butonul "Adăugați o limbă".</p><p>Limbile adăugate vor fi afișate în lista de limbi și prin urmare pot fi editate sau șterse.</p>'
+    label: 'Adding languages'
+    body: '<p>To add more languages to your site, click the "Add language" button.</p><p>Added languages will be displayed in the language list and can then be edited or deleted.</p>'
   language-reorder:
-    label: 'Reordonarea limbilor'
-    body: '<p>Pentru a reordona limbile pe situl dumneavoastră, folosiți pictogramele de tras de lângă fiecare limbă.</p><p>Ordinea indicată aici este ordinea de afișare pentru listele de limbă de pe site, cum ar fi în blocurile de schimbare a limbii furnizate de modulele Traducerea Interfeței și Traducerea Conținutului.</p> <p>Când ați terminat cu reordonarea limbilor, faceți clic pe butonul "Salvează configurația " pentru ca modificările să aibă efect.</p>'
+    label: 'Reordering languages'
+    body: '<p>To reorder the languages on your site, use the drag icons next to each language.</p><p>The order shown here is the display order for language lists on the site such as in the language switcher blocks provided by the Interface Translation and Content Translation modules.</p><p>When you are done with reordering the languages, click the "Save configuration" button for the changes to take effect.</p>'
   language-default:
-    label: 'Setați o limbă ca implicită'
-    body: '<p>Puteți schimba limba implicită a sitului prin alegerea uneia dintre limbile dumneavoastră configurate ca implicite. Situl va folosi limba implicită în situațiile în care nici o alegere nu este facută dar o limbă ar trebui să fi setată, de exemplu, limba interfeței de afișare.</p>'
+    label: 'Set a language as default'
+    body: '<p>You can change the default language of the site by choosing one of your configured languages as default. The site will use the default language in situations where no choice is made but a language should be set, for example as the language of the displayed interface.</p>'
   language-operations:
-    label: 'Modificarea limbilor'
-    body: '<p>Operațiunile sunt prevăzute pentru editarea și ștergerea limbii dumneavoastră.</p><p>Puteți edita denumirea și direcția limbii.</p><p>Limbile șterse pot fi adăugate înapoi ulterior. Ștergerea unei limbi va elimina toate traducerile de interfață asociate cu ea, iar conținutul în această limbă va fi setat pentru a fi într-o limbă neutră. Rețineți că nu puteți șterge limba implicită a site-ului.</p>'
+    label: 'Modifying languages'
+    body: '<p>Operations are provided for editing and deleting your languages.</p><p>You can edit the name and the direction of the language.</p><p>Deleted languages can be added back at a later time. Deleting a language will remove all interface translations associated with it, and content in this language will be set to be language neutral. Note that you cannot delete the default language of the site.</p>'
   language-continue:
-    label: 'Continuarea pe'
-    body: '<p>Acum, că aveți o imagine de ansamblu a paginii de configurare a Limbilor, puteți continua cu: <ul><li><a href="[site:url]/admin/config/regional/language/add">Adăugarea unei limbi</a></li><li>Reordonarea limbilor</li><li>Editarea unei limbi</li><li>Ștergerea unei limbi</li></ul></p>'
+    label: 'Continuing on'
+    body: '<p>Now that you have an overview of the "Languages" page, you can continue by:<ul><li><a href="[site:url]/admin/config/regional/language/add">Adding a language</a></li><li>Reordering languages</li><li>Editing a language</li><li>Deleting a language</li></ul></p>'
