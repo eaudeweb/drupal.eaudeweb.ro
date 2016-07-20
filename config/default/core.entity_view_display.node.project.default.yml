@@ -39,12 +39,12 @@ content:
     label: hidden
     settings:
       optionset: default
-      optionset_thumbnail: default
-      skin: default
+      optionset_thumbnail: ''
+      skin: classic
       skin_thumbnail: ''
       image_style: ''
       thumbnail_style: ''
-      thumbnail_effect: grid
+      thumbnail_effect: ''
       media_switch: ''
       ratio: ''
       layout: ''
