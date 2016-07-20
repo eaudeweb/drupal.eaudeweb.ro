@@ -1,0 +1,14 @@
+uuid: 2cd8dcf7-6576-4f77-b3aa-d2240c77b956
+langcode: en
+status: true
+dependencies: {  }
+name: slider
+label: Carousel
+effects:
+  aa44465f-2670-43a2-832a-080001bb2a8f:
+    uuid: aa44465f-2670-43a2-832a-080001bb2a8f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600

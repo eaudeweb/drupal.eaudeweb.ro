@@ -97,10 +97,11 @@ content:
       optionset_thumbnail: ''
       skin: classic
       skin_thumbnail: ''
-      image_style: ''
+      image_style: slider
       thumbnail_style: ''
       thumbnail_effect: ''
       media_switch: ''
+      box_style: ''
       ratio: ''
       layout: ''
       thumbnail_caption: ''
@@ -147,7 +148,6 @@ content:
         variableWidth: '0'
       display: main
       item_id: ''
-      box_style: ''
       icon: false
     third_party_settings:
       ds:
