@@ -9,6 +9,7 @@ classes:
     - layout-footer
     - layout-footer-links-teaser
     - col-md-8
+    - col-md-6
     - col-md-4
     - well
     - row

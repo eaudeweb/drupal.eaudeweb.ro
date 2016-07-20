@@ -20,26 +20,39 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
+      id: ds_2col_stacked
       path: modules/contrib/ds
-      library: ''
+      library: layout_plugin/ds_2col_stacked
       disable_css: false
       entity_classes: all_classes
       settings:
         wrappers:
-          ds_content: div
+          header: div
+          left: div
+          right: div
+          footer: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
         classes:
           layout_class: {  }
-          ds_content: {  }
+          header: {  }
+          left:
+            col-md-6: col-md-6
+            no-left-padding: no-left-padding
+          right:
+            col-md-6: col-md-6
+            no-right-padding: no-right-padding
+          footer:
+            layout-footer: layout-footer
     regions:
-      ds_content:
+      header:
         - field_images
         - body
+      left:
         - field_client
+      right:
         - field_technologies
         - field_link
 id: node.project.default
