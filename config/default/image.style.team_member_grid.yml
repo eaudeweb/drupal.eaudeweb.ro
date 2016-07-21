@@ -1,0 +1,14 @@
+uuid: 62c63d1e-6293-4f0e-ab19-de429deb932d
+langcode: en
+status: true
+dependencies: {  }
+name: team_member_grid
+label: 'Team member grid'
+effects:
+  a89eb112-217d-4c2c-a2ae-9afc0d61c7d4:
+    uuid: a89eb112-217d-4c2c-a2ae-9afc0d61c7d4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400

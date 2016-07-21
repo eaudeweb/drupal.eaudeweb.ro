@@ -23,18 +23,18 @@ settings:
   file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '1 MB'
-  max_resolution: 85x85
+  max_resolution: ''
   min_resolution: ''
   alt_field: false
   alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: 71771c5d-93e6-4bcb-b649-5f5a8afc6050
     alt: ''
     title: ''
-    width: null
-    height: null
+    width: 1080
+    height: 715
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
