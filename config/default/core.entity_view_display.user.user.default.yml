@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_team_member
+    - field.field.user.user.field_user_full_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -16,6 +17,13 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_user_full_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   user_picture:
     type: image
     weight: 0
