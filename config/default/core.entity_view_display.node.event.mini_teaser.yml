@@ -171,7 +171,7 @@ content:
           id: expert
           settings:
             lb: ''
-            prefix: '<span class="glyphicon glyphicon-calendar"></span>'
+            prefix: '<div class=''event-mini-teaser-date''><span class="glyphicon glyphicon-calendar"></span>'
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
@@ -185,7 +185,7 @@ content:
             fi-el: strong
             fi-cl: ''
             fi-at: ''
-            suffix: ''
+            suffix: '</div>'
             lbw: false
             lb-col: false
             ow: false
