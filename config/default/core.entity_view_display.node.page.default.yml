@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_facebook_share
     - node.type.page
   module:
     - text
@@ -18,10 +19,18 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
+  field_facebook_share:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   links:
-    weight: 101
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

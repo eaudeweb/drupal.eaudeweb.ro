@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_facebook_share
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.medium
@@ -24,19 +25,22 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
         - field_image
         - body
         - field_tags
         - links
+        - field_facebook_share
         - comment
 _core:
   default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
@@ -54,10 +58,16 @@ content:
   comment:
     label: above
     type: comment_default
-    weight: 4
+    weight: 5
     settings:
       pager_id: 0
     third_party_settings: {  }
+  field_facebook_share:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_image:
     type: image
     weight: 0

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.project.body
     - field.field.node.project.field_client
     - field.field.node.project.field_end_date
+    - field.field.node.project.field_facebook_share
     - field.field.node.project.field_images
     - field.field.node.project.field_link
     - field.field.node.project.field_start_date
@@ -48,6 +49,7 @@ third_party_settings:
             layout-footer: layout-footer
     regions:
       header:
+        - field_facebook_share
         - field_images
         - body
         - field_link
@@ -63,11 +65,11 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 3
     settings: {  }
     third_party_settings: {  }
   field_client:
-    weight: 3
+    weight: 5
     label: hidden
     settings:
       view_mode: in_
@@ -102,8 +104,14 @@ content:
             fi: false
             fi-def-at: false
     type: entity_reference_entity_view
+  field_facebook_share:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_images:
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       optionset: default
@@ -174,7 +182,7 @@ content:
     type: slick_image
   field_link:
     type: link
-    weight: 2
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -191,7 +199,7 @@ content:
             lb-col: false
             classes: {  }
   field_technologies:
-    weight: 4
+    weight: 6
     label: above
     settings:
       link: true

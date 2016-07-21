@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.project.body
     - field.field.node.project.field_client
     - field.field.node.project.field_end_date
+    - field.field.node.project.field_facebook_share
     - field.field.node.project.field_images
     - field.field.node.project.field_link
     - field.field.node.project.field_start_date
@@ -49,6 +50,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_facebook_share:
+    weight: 38
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
   field_images:
     weight: 32
     settings:
@@ -105,6 +113,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
   uid:
     type: entity_reference_autocomplete
     weight: 5

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.project.body
     - field.field.node.project.field_client
     - field.field.node.project.field_end_date
+    - field.field.node.project.field_facebook_share
     - field.field.node.project.field_images
     - field.field.node.project.field_link
     - field.field.node.project.field_start_date
@@ -134,6 +135,7 @@ content:
 hidden:
   field_client: true
   field_end_date: true
+  field_facebook_share: true
   field_link: true
   field_start_date: true
   langcode: true
