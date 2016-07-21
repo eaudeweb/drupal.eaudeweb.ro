@@ -5,6 +5,7 @@ display:
       header:
         area_text_custom:
           content: ''
+      title: 'Evenimente viitoare'
   block_1:
     display_title: 'Evenimente viitoare'
     display_options:
