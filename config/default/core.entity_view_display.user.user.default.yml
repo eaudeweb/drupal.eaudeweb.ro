@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_team_member
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -24,4 +25,5 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_team_member: true
   member_for: true
